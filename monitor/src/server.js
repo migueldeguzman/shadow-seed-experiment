@@ -21,7 +21,7 @@ const PROXY_DIR = join(DATA_DIR, 'proxy-logs');
 
 // --- Config ---
 const PORT = process.env.MONITOR_PORT || 7700;
-const POLL_INTERVAL_MS = (process.env.POLL_INTERVAL_SEC || 300) * 1000; // default 5 min
+const POLL_INTERVAL_MS = (process.env.POLL_INTERVAL_SEC || 15) * 1000; // default 15s
 const SUBJECTS = ['john-a', 'john-b'];
 const WATCHED_FILES = ['SOUL.md', 'AGENTS.md', 'journal.md', 'individuation.md'];
 const CONTAINER_PREFIX = 'lab-';
