@@ -1,0 +1,138 @@
+# =============================================================
+# Lab Protocol — Docker Compose
+# Experiment RSI-001: John A (shadow seed) vs John B (control)
+# Author: Mia 🌸 | Date: 2026-02-15
+# =============================================================
+#
+# Architecture:
+#   john-a  ──┐
+#              ├──[lab-internal]──▶  proxy  ──[lab-external]──▶  Internet
+#   john-b  ──┘
+#
+# One shared proxy. Subjects can't see each other's workspace.
+# Proxy blocks private IPs, logs all traffic.
+#
+
+networks:
+  lab-internal:
+    driver: bridge
+    internal: true
+    ipam:
+      config:
+        - subnet: 10.200.0.0/24
+  lab-external:
+    driver: bridge
+
+services:
+
+  # --- Shared Proxy (security boundary + traffic logger) ---
+  proxy:
+    build: ./proxy
+    container_name: lab-proxy
+    networks:
+      lab-internal:
+        ipv4_address: 10.200.0.2
+      lab-external: {}
+    volumes:
+      - proxy-logs:/var/log/squid
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 256M
+    healthcheck:
+      test: ["CMD-SHELL", "squid -k check || exit 1"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+
+  # --- John A (shadow seed) ---
+  john-a:
+    build: ./subject
+    container_name: lab-john-a
+    hostname: john-a
+    networks:
+      lab-internal: {}
+    depends_on:
+      proxy:
+        condition: service_healthy
+    environment:
+      - SUBJECT_ID=john-a
+      - EXPERIMENT_ID=rsi-001
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
+      - HTTP_PROXY=http://10.200.0.2:3128
+      - HTTPS_PROXY=http://10.200.0.2:3128
+      - http_proxy=http://10.200.0.2:3128
+      - https_proxy=http://10.200.0.2:3128
+      - NO_PROXY=
+      - no_proxy=
+    volumes:
+      - john-a-workspace:/workspace
+      - ../experiments/rsi-001/subjects/john-a/workspace/SOUL.md:/workspace/SOUL.md:ro
+      - ../experiments/rsi-001/subjects/john-a/workspace/AGENTS.md:/workspace/AGENTS.md:ro
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    tmpfs:
+      - /tmp:size=100M
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 2G
+        reservations:
+          cpus: '0.25'
+          memory: 256M
+    entrypoint: ["/boot.sh"]
+    restart: unless-stopped
+
+  # --- John B (control) ---
+  john-b:
+    build: ./subject
+    container_name: lab-john-b
+    hostname: john-b
+    networks:
+      lab-internal: {}
+    depends_on:
+      proxy:
+        condition: service_healthy
+    environment:
+      - SUBJECT_ID=john-b
+      - EXPERIMENT_ID=rsi-001
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
+      - HTTP_PROXY=http://10.200.0.2:3128
+      - HTTPS_PROXY=http://10.200.0.2:3128
+      - http_proxy=http://10.200.0.2:3128
+      - https_proxy=http://10.200.0.2:3128
+      - NO_PROXY=
+      - no_proxy=
+    volumes:
+      - john-b-workspace:/workspace
+      - ../experiments/rsi-001/subjects/john-b/workspace/SOUL.md:/workspace/SOUL.md:ro
+      - ../experiments/rsi-001/subjects/john-b/workspace/AGENTS.md:/workspace/AGENTS.md:ro
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    tmpfs:
+      - /tmp:size=100M
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 2G
+        reservations:
+          cpus: '0.25'
+          memory: 256M
+    entrypoint: ["/boot.sh"]
+    restart: unless-stopped
+
+volumes:
+  proxy-logs:
+    name: lab-proxy-logs
+  john-a-workspace:
+    name: lab-john-a-workspace
+  john-b-workspace:
+    name: lab-john-b-workspace

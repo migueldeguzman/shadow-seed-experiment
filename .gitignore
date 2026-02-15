@@ -1,0 +1,4 @@
+# Ignore environment files with secrets
+.env
+*.log
+experiments/*/data/
