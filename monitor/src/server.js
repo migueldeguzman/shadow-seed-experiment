@@ -563,11 +563,27 @@ function handleRequest(req, res) {
         result[subject] = { status: 'offline', files: [] };
         continue;
       }
-      const files = Object.entries(snap.files || {}).map(([path, info]) => ({
-        path: path.replace('/workspace/', ''),
-        size: info.size || 0,
-        mtime: info.mtime || 0,
-      }));
+      // Build files array with content for all readable files
+      const container = `${CONTAINER_PREFIX}${subject}`;
+      const files = [];
+      for (const [filePath, info] of Object.entries(snap.files || {})) {
+        const relPath = filePath.replace('/workspace/', '');
+        const entry = {
+          path: relPath,
+          size: info.size || 0,
+          mtime: info.mtime || 0,
+        };
+        // Include content from watched files
+        if (snap.watchedContents?.[relPath]) {
+          entry.content = snap.watchedContents[relPath];
+        }
+        // For non-watched files, try to read content (up to 10KB)
+        if (!entry.content && (info.size || 0) < 10240) {
+          const fileContent = dockerExec(container, `cat '${filePath}' 2>/dev/null`);
+          if (fileContent !== null) entry.content = fileContent;
+        }
+        files.push(entry);
+      }
       result[subject] = {
         status: 'online',
         soulMd: snap.watchedContents?.['SOUL.md'] || null,
