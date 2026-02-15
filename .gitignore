@@ -2,3 +2,9 @@
 .env
 *.log
 experiments/*/data/
+
+# Monitor runtime data (snapshots, events, diffs — generated at runtime)
+monitor/data/
+
+# Node
+node_modules/
