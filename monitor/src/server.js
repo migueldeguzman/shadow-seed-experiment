@@ -1,6 +1,7 @@
 // =============================================================
 // Shadow Seed Monitor — Lab Room Observation Server
-// Watches all activity inside John A and John B containers
+// Watches all activity across 12 subjects (6 paired runs)
+// John A (shadow seed) × 6 vs John B (control) × 6
 //
 // Author: Mia 🌸 | IndividuationLab
 // =============================================================
@@ -22,7 +23,14 @@ const PROXY_DIR = join(DATA_DIR, 'proxy-logs');
 // --- Config ---
 const PORT = process.env.MONITOR_PORT || 7700;
 const POLL_INTERVAL_MS = (process.env.POLL_INTERVAL_SEC || 15) * 1000; // default 15s
-const SUBJECTS = ['john-a', 'john-b'];
+const SUBJECTS = [
+  'john-a-1', 'john-b-1',
+  'john-a-2', 'john-b-2',
+  'john-a-3', 'john-b-3',
+  'john-a-4', 'john-b-4',
+  'john-a-5', 'john-b-5',
+  'john-a-6', 'john-b-6',
+];
 const WATCHED_FILES = ['SOUL.md', 'AGENTS.md', 'journal.md', 'individuation.md'];
 const CONTAINER_PREFIX = 'lab-';
 

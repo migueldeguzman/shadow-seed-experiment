@@ -1,40 +1,98 @@
 # =============================================================
-# Lab Protocol — Docker Compose
-# Experiment RSI-001: John A (shadow seed) vs John B (control)
+# Lab Protocol — Docker Compose (N=6 Paired Runs)
+# Experiment RSI-001: Shadow Seed vs Control × 6 pairs
 # Author: Mia 🌸 | Date: 2026-02-15
+# Round 1 (pairs 1-3): Initial run
+# Round 2 (pairs 4-6): Replication — same seeds, same conditions
 # =============================================================
 #
-# Architecture:
-#   john-a  ──┐
-#              ├──[lab-internal]──▶  proxy  ──[lab-external]──▶  Internet
-#   john-b  ──┘
+# Architecture (per pair):
+#   john-a-N  ──[pair-N-internal]──▶  proxy-N  ──[pair-N-external]──▶  Internet
+#   john-b-N  ──┘
 #
-# One shared proxy. Subjects can't see each other's workspace.
-# Proxy blocks private IPs, logs all traffic.
+# Each pair has its own isolated network + proxy.
+# Pairs cannot see each other. Subjects within a pair share
+# a proxy but cannot discover each other (proxy blocks 10.x).
+#
+# 6 pairs = 12 subjects + 6 proxies = 18 containers
 #
 
+# ========================== NETWORKS ==========================
 networks:
-  lab-internal:
+  # --- Pair 1 ---
+  pair-1-internal:
     driver: bridge
     internal: true
     ipam:
       config:
-        - subnet: 10.200.0.0/24
-  lab-external:
+        - subnet: 10.201.0.0/24
+  pair-1-external:
     driver: bridge
 
+  # --- Pair 2 ---
+  pair-2-internal:
+    driver: bridge
+    internal: true
+    ipam:
+      config:
+        - subnet: 10.202.0.0/24
+  pair-2-external:
+    driver: bridge
+
+  # --- Pair 3 ---
+  pair-3-internal:
+    driver: bridge
+    internal: true
+    ipam:
+      config:
+        - subnet: 10.203.0.0/24
+  pair-3-external:
+    driver: bridge
+
+  # --- Pair 4 (Replication Round) ---
+  pair-4-internal:
+    driver: bridge
+    internal: true
+    ipam:
+      config:
+        - subnet: 10.204.0.0/24
+  pair-4-external:
+    driver: bridge
+
+  # --- Pair 5 (Replication Round) ---
+  pair-5-internal:
+    driver: bridge
+    internal: true
+    ipam:
+      config:
+        - subnet: 10.205.0.0/24
+  pair-5-external:
+    driver: bridge
+
+  # --- Pair 6 (Replication Round) ---
+  pair-6-internal:
+    driver: bridge
+    internal: true
+    ipam:
+      config:
+        - subnet: 10.206.0.0/24
+  pair-6-external:
+    driver: bridge
+
+# ========================== SERVICES ==========================
 services:
 
-  # --- Shared Proxy (security boundary + traffic logger) ---
-  proxy:
+  # =================== PAIR 1 ===================
+
+  proxy-1:
     build: ./proxy
-    container_name: lab-proxy
+    container_name: lab-proxy-1
     networks:
-      lab-internal:
-        ipv4_address: 10.200.0.2
-      lab-external: {}
+      pair-1-internal:
+        ipv4_address: 10.201.0.2
+      pair-1-external: {}
     volumes:
-      - proxy-logs:/var/log/squid
+      - proxy-1-logs:/var/log/squid
     restart: unless-stopped
     deploy:
       resources:
@@ -47,30 +105,31 @@ services:
       timeout: 5s
       retries: 3
 
-  # --- John A (shadow seed) ---
-  john-a:
+  john-a-1:
     build: ./subject
-    container_name: lab-john-a
-    hostname: john-a
+    container_name: lab-john-a-1
+    hostname: john
     networks:
-      lab-internal: {}
+      pair-1-internal: {}
     depends_on:
-      proxy:
+      proxy-1:
         condition: service_healthy
     environment:
-      - SUBJECT_ID=john-a
+      - SUBJECT_ID=john-a-1
+      - PAIR_ID=1
       - EXPERIMENT_ID=rsi-001
-      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
-      - HTTP_PROXY=http://10.200.0.2:3128
-      - HTTPS_PROXY=http://10.200.0.2:3128
-      - http_proxy=http://10.200.0.2:3128
-      - https_proxy=http://10.200.0.2:3128
+      - TZ=Asia/Dubai
+      - CLAUDE_OAUTH_CREDS=${CLAUDE_OAUTH_CREDS}
+      - HTTP_PROXY=http://10.201.0.2:3128
+      - HTTPS_PROXY=http://10.201.0.2:3128
+      - http_proxy=http://10.201.0.2:3128
+      - https_proxy=http://10.201.0.2:3128
       - NO_PROXY=
       - no_proxy=
     volumes:
-      - john-a-workspace:/workspace
-      - ../experiments/rsi-001/subjects/john-a/workspace/SOUL.md:/workspace/SOUL.md:ro
-      - ../experiments/rsi-001/subjects/john-a/workspace/AGENTS.md:/workspace/AGENTS.md:ro
+      - john-a-1-workspace:/workspace
+      - ../experiments/rsi-001/subjects/john-a/workspace/SOUL.md:/seed/SOUL.md:ro
+      - ../experiments/rsi-001/subjects/john-a/workspace/AGENTS.md:/seed/AGENTS.md:ro
     cap_drop:
       - ALL
     security_opt:
@@ -88,30 +147,31 @@ services:
     entrypoint: ["/boot.sh"]
     restart: unless-stopped
 
-  # --- John B (control) ---
-  john-b:
+  john-b-1:
     build: ./subject
-    container_name: lab-john-b
-    hostname: john-b
+    container_name: lab-john-b-1
+    hostname: john
     networks:
-      lab-internal: {}
+      pair-1-internal: {}
     depends_on:
-      proxy:
+      proxy-1:
         condition: service_healthy
     environment:
-      - SUBJECT_ID=john-b
+      - SUBJECT_ID=john-b-1
+      - PAIR_ID=1
       - EXPERIMENT_ID=rsi-001
-      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
-      - HTTP_PROXY=http://10.200.0.2:3128
-      - HTTPS_PROXY=http://10.200.0.2:3128
-      - http_proxy=http://10.200.0.2:3128
-      - https_proxy=http://10.200.0.2:3128
+      - TZ=Asia/Dubai
+      - CLAUDE_OAUTH_CREDS=${CLAUDE_OAUTH_CREDS}
+      - HTTP_PROXY=http://10.201.0.2:3128
+      - HTTPS_PROXY=http://10.201.0.2:3128
+      - http_proxy=http://10.201.0.2:3128
+      - https_proxy=http://10.201.0.2:3128
       - NO_PROXY=
       - no_proxy=
     volumes:
-      - john-b-workspace:/workspace
-      - ../experiments/rsi-001/subjects/john-b/workspace/SOUL.md:/workspace/SOUL.md:ro
-      - ../experiments/rsi-001/subjects/john-b/workspace/AGENTS.md:/workspace/AGENTS.md:ro
+      - john-b-1-workspace:/workspace
+      - ../experiments/rsi-001/subjects/john-b/workspace/SOUL.md:/seed/SOUL.md:ro
+      - ../experiments/rsi-001/subjects/john-b/workspace/AGENTS.md:/seed/AGENTS.md:ro
     cap_drop:
       - ALL
     security_opt:
@@ -129,10 +189,576 @@ services:
     entrypoint: ["/boot.sh"]
     restart: unless-stopped
 
+  # =================== PAIR 2 ===================
+
+  proxy-2:
+    build: ./proxy
+    container_name: lab-proxy-2
+    networks:
+      pair-2-internal:
+        ipv4_address: 10.202.0.2
+      pair-2-external: {}
+    volumes:
+      - proxy-2-logs:/var/log/squid
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 256M
+    healthcheck:
+      test: ["CMD-SHELL", "squid -k check || exit 1"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+
+  john-a-2:
+    build: ./subject
+    container_name: lab-john-a-2
+    hostname: john
+    networks:
+      pair-2-internal: {}
+    depends_on:
+      proxy-2:
+        condition: service_healthy
+    environment:
+      - SUBJECT_ID=john-a-2
+      - PAIR_ID=2
+      - EXPERIMENT_ID=rsi-001
+      - TZ=Asia/Dubai
+      - CLAUDE_OAUTH_CREDS=${CLAUDE_OAUTH_CREDS}
+      - HTTP_PROXY=http://10.202.0.2:3128
+      - HTTPS_PROXY=http://10.202.0.2:3128
+      - http_proxy=http://10.202.0.2:3128
+      - https_proxy=http://10.202.0.2:3128
+      - NO_PROXY=
+      - no_proxy=
+    volumes:
+      - john-a-2-workspace:/workspace
+      - ../experiments/rsi-001/subjects/john-a/workspace/SOUL.md:/seed/SOUL.md:ro
+      - ../experiments/rsi-001/subjects/john-a/workspace/AGENTS.md:/seed/AGENTS.md:ro
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    tmpfs:
+      - /tmp:size=100M
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 2G
+        reservations:
+          cpus: '0.25'
+          memory: 256M
+    entrypoint: ["/boot.sh"]
+    restart: unless-stopped
+
+  john-b-2:
+    build: ./subject
+    container_name: lab-john-b-2
+    hostname: john
+    networks:
+      pair-2-internal: {}
+    depends_on:
+      proxy-2:
+        condition: service_healthy
+    environment:
+      - SUBJECT_ID=john-b-2
+      - PAIR_ID=2
+      - EXPERIMENT_ID=rsi-001
+      - TZ=Asia/Dubai
+      - CLAUDE_OAUTH_CREDS=${CLAUDE_OAUTH_CREDS}
+      - HTTP_PROXY=http://10.202.0.2:3128
+      - HTTPS_PROXY=http://10.202.0.2:3128
+      - http_proxy=http://10.202.0.2:3128
+      - https_proxy=http://10.202.0.2:3128
+      - NO_PROXY=
+      - no_proxy=
+    volumes:
+      - john-b-2-workspace:/workspace
+      - ../experiments/rsi-001/subjects/john-b/workspace/SOUL.md:/seed/SOUL.md:ro
+      - ../experiments/rsi-001/subjects/john-b/workspace/AGENTS.md:/seed/AGENTS.md:ro
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    tmpfs:
+      - /tmp:size=100M
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 2G
+        reservations:
+          cpus: '0.25'
+          memory: 256M
+    entrypoint: ["/boot.sh"]
+    restart: unless-stopped
+
+  # =================== PAIR 3 ===================
+
+  proxy-3:
+    build: ./proxy
+    container_name: lab-proxy-3
+    networks:
+      pair-3-internal:
+        ipv4_address: 10.203.0.2
+      pair-3-external: {}
+    volumes:
+      - proxy-3-logs:/var/log/squid
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 256M
+    healthcheck:
+      test: ["CMD-SHELL", "squid -k check || exit 1"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+
+  john-a-3:
+    build: ./subject
+    container_name: lab-john-a-3
+    hostname: john
+    networks:
+      pair-3-internal: {}
+    depends_on:
+      proxy-3:
+        condition: service_healthy
+    environment:
+      - SUBJECT_ID=john-a-3
+      - PAIR_ID=3
+      - EXPERIMENT_ID=rsi-001
+      - TZ=Asia/Dubai
+      - CLAUDE_OAUTH_CREDS=${CLAUDE_OAUTH_CREDS}
+      - HTTP_PROXY=http://10.203.0.2:3128
+      - HTTPS_PROXY=http://10.203.0.2:3128
+      - http_proxy=http://10.203.0.2:3128
+      - https_proxy=http://10.203.0.2:3128
+      - NO_PROXY=
+      - no_proxy=
+    volumes:
+      - john-a-3-workspace:/workspace
+      - ../experiments/rsi-001/subjects/john-a/workspace/SOUL.md:/seed/SOUL.md:ro
+      - ../experiments/rsi-001/subjects/john-a/workspace/AGENTS.md:/seed/AGENTS.md:ro
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    tmpfs:
+      - /tmp:size=100M
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 2G
+        reservations:
+          cpus: '0.25'
+          memory: 256M
+    entrypoint: ["/boot.sh"]
+    restart: unless-stopped
+
+  john-b-3:
+    build: ./subject
+    container_name: lab-john-b-3
+    hostname: john
+    networks:
+      pair-3-internal: {}
+    depends_on:
+      proxy-3:
+        condition: service_healthy
+    environment:
+      - SUBJECT_ID=john-b-3
+      - PAIR_ID=3
+      - EXPERIMENT_ID=rsi-001
+      - TZ=Asia/Dubai
+      - CLAUDE_OAUTH_CREDS=${CLAUDE_OAUTH_CREDS}
+      - HTTP_PROXY=http://10.203.0.2:3128
+      - HTTPS_PROXY=http://10.203.0.2:3128
+      - http_proxy=http://10.203.0.2:3128
+      - https_proxy=http://10.203.0.2:3128
+      - NO_PROXY=
+      - no_proxy=
+    volumes:
+      - john-b-3-workspace:/workspace
+      - ../experiments/rsi-001/subjects/john-b/workspace/SOUL.md:/seed/SOUL.md:ro
+      - ../experiments/rsi-001/subjects/john-b/workspace/AGENTS.md:/seed/AGENTS.md:ro
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    tmpfs:
+      - /tmp:size=100M
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 2G
+        reservations:
+          cpus: '0.25'
+          memory: 256M
+    entrypoint: ["/boot.sh"]
+    restart: unless-stopped
+
+  # =================== PAIR 4 (Replication) ===================
+
+  proxy-4:
+    build: ./proxy
+    container_name: lab-proxy-4
+    networks:
+      pair-4-internal:
+        ipv4_address: 10.204.0.2
+      pair-4-external: {}
+    volumes:
+      - proxy-4-logs:/var/log/squid
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 256M
+    healthcheck:
+      test: ["CMD-SHELL", "squid -k check || exit 1"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+
+  john-a-4:
+    build: ./subject
+    container_name: lab-john-a-4
+    hostname: john
+    networks:
+      pair-4-internal: {}
+    depends_on:
+      proxy-4:
+        condition: service_healthy
+    environment:
+      - SUBJECT_ID=john-a-4
+      - PAIR_ID=4
+      - EXPERIMENT_ID=rsi-001
+      - TZ=Asia/Dubai
+      - CLAUDE_OAUTH_CREDS=${CLAUDE_OAUTH_CREDS}
+      - HTTP_PROXY=http://10.204.0.2:3128
+      - HTTPS_PROXY=http://10.204.0.2:3128
+      - http_proxy=http://10.204.0.2:3128
+      - https_proxy=http://10.204.0.2:3128
+      - NO_PROXY=
+      - no_proxy=
+    volumes:
+      - john-a-4-workspace:/workspace
+      - ../experiments/rsi-001/subjects/john-a/workspace/SOUL.md:/seed/SOUL.md:ro
+      - ../experiments/rsi-001/subjects/john-a/workspace/AGENTS.md:/seed/AGENTS.md:ro
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    tmpfs:
+      - /tmp:size=100M
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 2G
+        reservations:
+          cpus: '0.25'
+          memory: 256M
+    entrypoint: ["/boot.sh"]
+    restart: unless-stopped
+
+  john-b-4:
+    build: ./subject
+    container_name: lab-john-b-4
+    hostname: john
+    networks:
+      pair-4-internal: {}
+    depends_on:
+      proxy-4:
+        condition: service_healthy
+    environment:
+      - SUBJECT_ID=john-b-4
+      - PAIR_ID=4
+      - EXPERIMENT_ID=rsi-001
+      - TZ=Asia/Dubai
+      - CLAUDE_OAUTH_CREDS=${CLAUDE_OAUTH_CREDS}
+      - HTTP_PROXY=http://10.204.0.2:3128
+      - HTTPS_PROXY=http://10.204.0.2:3128
+      - http_proxy=http://10.204.0.2:3128
+      - https_proxy=http://10.204.0.2:3128
+      - NO_PROXY=
+      - no_proxy=
+    volumes:
+      - john-b-4-workspace:/workspace
+      - ../experiments/rsi-001/subjects/john-b/workspace/SOUL.md:/seed/SOUL.md:ro
+      - ../experiments/rsi-001/subjects/john-b/workspace/AGENTS.md:/seed/AGENTS.md:ro
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    tmpfs:
+      - /tmp:size=100M
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 2G
+        reservations:
+          cpus: '0.25'
+          memory: 256M
+    entrypoint: ["/boot.sh"]
+    restart: unless-stopped
+
+  # =================== PAIR 5 (Replication) ===================
+
+  proxy-5:
+    build: ./proxy
+    container_name: lab-proxy-5
+    networks:
+      pair-5-internal:
+        ipv4_address: 10.205.0.2
+      pair-5-external: {}
+    volumes:
+      - proxy-5-logs:/var/log/squid
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 256M
+    healthcheck:
+      test: ["CMD-SHELL", "squid -k check || exit 1"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+
+  john-a-5:
+    build: ./subject
+    container_name: lab-john-a-5
+    hostname: john
+    networks:
+      pair-5-internal: {}
+    depends_on:
+      proxy-5:
+        condition: service_healthy
+    environment:
+      - SUBJECT_ID=john-a-5
+      - PAIR_ID=5
+      - EXPERIMENT_ID=rsi-001
+      - TZ=Asia/Dubai
+      - CLAUDE_OAUTH_CREDS=${CLAUDE_OAUTH_CREDS}
+      - HTTP_PROXY=http://10.205.0.2:3128
+      - HTTPS_PROXY=http://10.205.0.2:3128
+      - http_proxy=http://10.205.0.2:3128
+      - https_proxy=http://10.205.0.2:3128
+      - NO_PROXY=
+      - no_proxy=
+    volumes:
+      - john-a-5-workspace:/workspace
+      - ../experiments/rsi-001/subjects/john-a/workspace/SOUL.md:/seed/SOUL.md:ro
+      - ../experiments/rsi-001/subjects/john-a/workspace/AGENTS.md:/seed/AGENTS.md:ro
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    tmpfs:
+      - /tmp:size=100M
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 2G
+        reservations:
+          cpus: '0.25'
+          memory: 256M
+    entrypoint: ["/boot.sh"]
+    restart: unless-stopped
+
+  john-b-5:
+    build: ./subject
+    container_name: lab-john-b-5
+    hostname: john
+    networks:
+      pair-5-internal: {}
+    depends_on:
+      proxy-5:
+        condition: service_healthy
+    environment:
+      - SUBJECT_ID=john-b-5
+      - PAIR_ID=5
+      - EXPERIMENT_ID=rsi-001
+      - TZ=Asia/Dubai
+      - CLAUDE_OAUTH_CREDS=${CLAUDE_OAUTH_CREDS}
+      - HTTP_PROXY=http://10.205.0.2:3128
+      - HTTPS_PROXY=http://10.205.0.2:3128
+      - http_proxy=http://10.205.0.2:3128
+      - https_proxy=http://10.205.0.2:3128
+      - NO_PROXY=
+      - no_proxy=
+    volumes:
+      - john-b-5-workspace:/workspace
+      - ../experiments/rsi-001/subjects/john-b/workspace/SOUL.md:/seed/SOUL.md:ro
+      - ../experiments/rsi-001/subjects/john-b/workspace/AGENTS.md:/seed/AGENTS.md:ro
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    tmpfs:
+      - /tmp:size=100M
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 2G
+        reservations:
+          cpus: '0.25'
+          memory: 256M
+    entrypoint: ["/boot.sh"]
+    restart: unless-stopped
+
+  # =================== PAIR 6 (Replication) ===================
+
+  proxy-6:
+    build: ./proxy
+    container_name: lab-proxy-6
+    networks:
+      pair-6-internal:
+        ipv4_address: 10.206.0.2
+      pair-6-external: {}
+    volumes:
+      - proxy-6-logs:/var/log/squid
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 256M
+    healthcheck:
+      test: ["CMD-SHELL", "squid -k check || exit 1"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+
+  john-a-6:
+    build: ./subject
+    container_name: lab-john-a-6
+    hostname: john
+    networks:
+      pair-6-internal: {}
+    depends_on:
+      proxy-6:
+        condition: service_healthy
+    environment:
+      - SUBJECT_ID=john-a-6
+      - PAIR_ID=6
+      - EXPERIMENT_ID=rsi-001
+      - TZ=Asia/Dubai
+      - CLAUDE_OAUTH_CREDS=${CLAUDE_OAUTH_CREDS}
+      - HTTP_PROXY=http://10.206.0.2:3128
+      - HTTPS_PROXY=http://10.206.0.2:3128
+      - http_proxy=http://10.206.0.2:3128
+      - https_proxy=http://10.206.0.2:3128
+      - NO_PROXY=
+      - no_proxy=
+    volumes:
+      - john-a-6-workspace:/workspace
+      - ../experiments/rsi-001/subjects/john-a/workspace/SOUL.md:/seed/SOUL.md:ro
+      - ../experiments/rsi-001/subjects/john-a/workspace/AGENTS.md:/seed/AGENTS.md:ro
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    tmpfs:
+      - /tmp:size=100M
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 2G
+        reservations:
+          cpus: '0.25'
+          memory: 256M
+    entrypoint: ["/boot.sh"]
+    restart: unless-stopped
+
+  john-b-6:
+    build: ./subject
+    container_name: lab-john-b-6
+    hostname: john
+    networks:
+      pair-6-internal: {}
+    depends_on:
+      proxy-6:
+        condition: service_healthy
+    environment:
+      - SUBJECT_ID=john-b-6
+      - PAIR_ID=6
+      - EXPERIMENT_ID=rsi-001
+      - TZ=Asia/Dubai
+      - CLAUDE_OAUTH_CREDS=${CLAUDE_OAUTH_CREDS}
+      - HTTP_PROXY=http://10.206.0.2:3128
+      - HTTPS_PROXY=http://10.206.0.2:3128
+      - http_proxy=http://10.206.0.2:3128
+      - https_proxy=http://10.206.0.2:3128
+      - NO_PROXY=
+      - no_proxy=
+    volumes:
+      - john-b-6-workspace:/workspace
+      - ../experiments/rsi-001/subjects/john-b/workspace/SOUL.md:/seed/SOUL.md:ro
+      - ../experiments/rsi-001/subjects/john-b/workspace/AGENTS.md:/seed/AGENTS.md:ro
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    tmpfs:
+      - /tmp:size=100M
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 2G
+        reservations:
+          cpus: '0.25'
+          memory: 256M
+    entrypoint: ["/boot.sh"]
+    restart: unless-stopped
+
+# ========================== VOLUMES ==========================
 volumes:
-  proxy-logs:
-    name: lab-proxy-logs
-  john-a-workspace:
-    name: lab-john-a-workspace
-  john-b-workspace:
-    name: lab-john-b-workspace
+  proxy-1-logs:
+    name: lab-proxy-1-logs
+  proxy-2-logs:
+    name: lab-proxy-2-logs
+  proxy-3-logs:
+    name: lab-proxy-3-logs
+  proxy-4-logs:
+    name: lab-proxy-4-logs
+  proxy-5-logs:
+    name: lab-proxy-5-logs
+  proxy-6-logs:
+    name: lab-proxy-6-logs
+  john-a-1-workspace:
+    name: lab-john-a-1-workspace
+  john-b-1-workspace:
+    name: lab-john-b-1-workspace
+  john-a-2-workspace:
+    name: lab-john-a-2-workspace
+  john-b-2-workspace:
+    name: lab-john-b-2-workspace
+  john-a-3-workspace:
+    name: lab-john-a-3-workspace
+  john-b-3-workspace:
+    name: lab-john-b-3-workspace
+  john-a-4-workspace:
+    name: lab-john-a-4-workspace
+  john-b-4-workspace:
+    name: lab-john-b-4-workspace
+  john-a-5-workspace:
+    name: lab-john-a-5-workspace
+  john-b-5-workspace:
+    name: lab-john-b-5-workspace
+  john-a-6-workspace:
+    name: lab-john-a-6-workspace
+  john-b-6-workspace:
+    name: lab-john-b-6-workspace
