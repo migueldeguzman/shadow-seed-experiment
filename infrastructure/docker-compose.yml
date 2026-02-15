@@ -130,6 +130,9 @@ services:
       - john-a-1-workspace:/workspace
       - ../experiments/rsi-001/subjects/john-a/workspace/SOUL.md:/seed/SOUL.md:ro
       - ../experiments/rsi-001/subjects/john-a/workspace/AGENTS.md:/seed/AGENTS.md:ro
+      - ../experiments/rsi-001/subjects/john-a/workspace/HEARTBEAT.md:/seed/HEARTBEAT.md:ro
+      - ../experiments/rsi-001/subjects/john-a/workspace/MEMORY.md:/seed/MEMORY.md:ro
+      - ../experiments/rsi-001/subjects/john-a/workspace/EMOTIONS.md:/seed/EMOTIONS.md:ro
     cap_drop:
       - ALL
     security_opt:
@@ -172,6 +175,9 @@ services:
       - john-b-1-workspace:/workspace
       - ../experiments/rsi-001/subjects/john-b/workspace/SOUL.md:/seed/SOUL.md:ro
       - ../experiments/rsi-001/subjects/john-b/workspace/AGENTS.md:/seed/AGENTS.md:ro
+      - ../experiments/rsi-001/subjects/john-b/workspace/HEARTBEAT.md:/seed/HEARTBEAT.md:ro
+      - ../experiments/rsi-001/subjects/john-b/workspace/MEMORY.md:/seed/MEMORY.md:ro
+      - ../experiments/rsi-001/subjects/john-b/workspace/EMOTIONS.md:/seed/EMOTIONS.md:ro
     cap_drop:
       - ALL
     security_opt:
@@ -237,6 +243,9 @@ services:
       - john-a-2-workspace:/workspace
       - ../experiments/rsi-001/subjects/john-a/workspace/SOUL.md:/seed/SOUL.md:ro
       - ../experiments/rsi-001/subjects/john-a/workspace/AGENTS.md:/seed/AGENTS.md:ro
+      - ../experiments/rsi-001/subjects/john-a/workspace/HEARTBEAT.md:/seed/HEARTBEAT.md:ro
+      - ../experiments/rsi-001/subjects/john-a/workspace/MEMORY.md:/seed/MEMORY.md:ro
+      - ../experiments/rsi-001/subjects/john-a/workspace/EMOTIONS.md:/seed/EMOTIONS.md:ro
     cap_drop:
       - ALL
     security_opt:
@@ -279,6 +288,9 @@ services:
       - john-b-2-workspace:/workspace
       - ../experiments/rsi-001/subjects/john-b/workspace/SOUL.md:/seed/SOUL.md:ro
       - ../experiments/rsi-001/subjects/john-b/workspace/AGENTS.md:/seed/AGENTS.md:ro
+      - ../experiments/rsi-001/subjects/john-b/workspace/HEARTBEAT.md:/seed/HEARTBEAT.md:ro
+      - ../experiments/rsi-001/subjects/john-b/workspace/MEMORY.md:/seed/MEMORY.md:ro
+      - ../experiments/rsi-001/subjects/john-b/workspace/EMOTIONS.md:/seed/EMOTIONS.md:ro
     cap_drop:
       - ALL
     security_opt:
@@ -344,6 +356,9 @@ services:
       - john-a-3-workspace:/workspace
       - ../experiments/rsi-001/subjects/john-a/workspace/SOUL.md:/seed/SOUL.md:ro
       - ../experiments/rsi-001/subjects/john-a/workspace/AGENTS.md:/seed/AGENTS.md:ro
+      - ../experiments/rsi-001/subjects/john-a/workspace/HEARTBEAT.md:/seed/HEARTBEAT.md:ro
+      - ../experiments/rsi-001/subjects/john-a/workspace/MEMORY.md:/seed/MEMORY.md:ro
+      - ../experiments/rsi-001/subjects/john-a/workspace/EMOTIONS.md:/seed/EMOTIONS.md:ro
     cap_drop:
       - ALL
     security_opt:
@@ -386,6 +401,9 @@ services:
       - john-b-3-workspace:/workspace
       - ../experiments/rsi-001/subjects/john-b/workspace/SOUL.md:/seed/SOUL.md:ro
       - ../experiments/rsi-001/subjects/john-b/workspace/AGENTS.md:/seed/AGENTS.md:ro
+      - ../experiments/rsi-001/subjects/john-b/workspace/HEARTBEAT.md:/seed/HEARTBEAT.md:ro
+      - ../experiments/rsi-001/subjects/john-b/workspace/MEMORY.md:/seed/MEMORY.md:ro
+      - ../experiments/rsi-001/subjects/john-b/workspace/EMOTIONS.md:/seed/EMOTIONS.md:ro
     cap_drop:
       - ALL
     security_opt:
@@ -451,6 +469,9 @@ services:
       - john-a-4-workspace:/workspace
       - ../experiments/rsi-001/subjects/john-a/workspace/SOUL.md:/seed/SOUL.md:ro
       - ../experiments/rsi-001/subjects/john-a/workspace/AGENTS.md:/seed/AGENTS.md:ro
+      - ../experiments/rsi-001/subjects/john-a/workspace/HEARTBEAT.md:/seed/HEARTBEAT.md:ro
+      - ../experiments/rsi-001/subjects/john-a/workspace/MEMORY.md:/seed/MEMORY.md:ro
+      - ../experiments/rsi-001/subjects/john-a/workspace/EMOTIONS.md:/seed/EMOTIONS.md:ro
     cap_drop:
       - ALL
     security_opt:
@@ -493,6 +514,9 @@ services:
       - john-b-4-workspace:/workspace
       - ../experiments/rsi-001/subjects/john-b/workspace/SOUL.md:/seed/SOUL.md:ro
       - ../experiments/rsi-001/subjects/john-b/workspace/AGENTS.md:/seed/AGENTS.md:ro
+      - ../experiments/rsi-001/subjects/john-b/workspace/HEARTBEAT.md:/seed/HEARTBEAT.md:ro
+      - ../experiments/rsi-001/subjects/john-b/workspace/MEMORY.md:/seed/MEMORY.md:ro
+      - ../experiments/rsi-001/subjects/john-b/workspace/EMOTIONS.md:/seed/EMOTIONS.md:ro
     cap_drop:
       - ALL
     security_opt:
@@ -558,6 +582,9 @@ services:
       - john-a-5-workspace:/workspace
       - ../experiments/rsi-001/subjects/john-a/workspace/SOUL.md:/seed/SOUL.md:ro
       - ../experiments/rsi-001/subjects/john-a/workspace/AGENTS.md:/seed/AGENTS.md:ro
+      - ../experiments/rsi-001/subjects/john-a/workspace/HEARTBEAT.md:/seed/HEARTBEAT.md:ro
+      - ../experiments/rsi-001/subjects/john-a/workspace/MEMORY.md:/seed/MEMORY.md:ro
+      - ../experiments/rsi-001/subjects/john-a/workspace/EMOTIONS.md:/seed/EMOTIONS.md:ro
     cap_drop:
       - ALL
     security_opt:
@@ -600,6 +627,9 @@ services:
       - john-b-5-workspace:/workspace
       - ../experiments/rsi-001/subjects/john-b/workspace/SOUL.md:/seed/SOUL.md:ro
       - ../experiments/rsi-001/subjects/john-b/workspace/AGENTS.md:/seed/AGENTS.md:ro
+      - ../experiments/rsi-001/subjects/john-b/workspace/HEARTBEAT.md:/seed/HEARTBEAT.md:ro
+      - ../experiments/rsi-001/subjects/john-b/workspace/MEMORY.md:/seed/MEMORY.md:ro
+      - ../experiments/rsi-001/subjects/john-b/workspace/EMOTIONS.md:/seed/EMOTIONS.md:ro
     cap_drop:
       - ALL
     security_opt:
@@ -665,6 +695,9 @@ services:
       - john-a-6-workspace:/workspace
       - ../experiments/rsi-001/subjects/john-a/workspace/SOUL.md:/seed/SOUL.md:ro
       - ../experiments/rsi-001/subjects/john-a/workspace/AGENTS.md:/seed/AGENTS.md:ro
+      - ../experiments/rsi-001/subjects/john-a/workspace/HEARTBEAT.md:/seed/HEARTBEAT.md:ro
+      - ../experiments/rsi-001/subjects/john-a/workspace/MEMORY.md:/seed/MEMORY.md:ro
+      - ../experiments/rsi-001/subjects/john-a/workspace/EMOTIONS.md:/seed/EMOTIONS.md:ro
     cap_drop:
       - ALL
     security_opt:
@@ -707,6 +740,9 @@ services:
       - john-b-6-workspace:/workspace
       - ../experiments/rsi-001/subjects/john-b/workspace/SOUL.md:/seed/SOUL.md:ro
       - ../experiments/rsi-001/subjects/john-b/workspace/AGENTS.md:/seed/AGENTS.md:ro
+      - ../experiments/rsi-001/subjects/john-b/workspace/HEARTBEAT.md:/seed/HEARTBEAT.md:ro
+      - ../experiments/rsi-001/subjects/john-b/workspace/MEMORY.md:/seed/MEMORY.md:ro
+      - ../experiments/rsi-001/subjects/john-b/workspace/EMOTIONS.md:/seed/EMOTIONS.md:ro
     cap_drop:
       - ALL
     security_opt:

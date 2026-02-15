@@ -31,7 +31,7 @@ const SUBJECTS = [
   'john-a-5', 'john-b-5',
   'john-a-6', 'john-b-6',
 ];
-const WATCHED_FILES = ['SOUL.md', 'AGENTS.md', 'journal.md', 'individuation.md'];
+const WATCHED_FILES = ['SOUL.md', 'AGENTS.md', 'journal.md', 'HEARTBEAT.md', 'MEMORY.md', 'EMOTIONS.md'];
 const CONTAINER_PREFIX = 'lab-';
 
 // Ensure data dirs
@@ -554,6 +554,37 @@ function handleRequest(req, res) {
     return respond(res, 200, { subject, entries: timeline });
   }
 
+  // GET /api/inventory — full inventory for snapshot-for-site.py
+  if (path === '/api/inventory') {
+    const result = {};
+    for (const subject of SUBJECTS) {
+      const snap = prevSnapshots[subject];
+      if (!snap) {
+        result[subject] = { status: 'offline', files: [] };
+        continue;
+      }
+      const files = Object.entries(snap.files || {}).map(([path, info]) => ({
+        path: path.replace('/workspace/', ''),
+        size: info.size || 0,
+        mtime: info.mtime || 0,
+      }));
+      result[subject] = {
+        status: 'online',
+        soulMd: snap.watchedContents?.['SOUL.md'] || null,
+        journalMd: snap.watchedContents?.['journal.md'] || null,
+        agentsMd: snap.watchedContents?.['AGENTS.md'] || null,
+        heartbeatMd: snap.watchedContents?.['HEARTBEAT.md'] || null,
+        memoryMd: snap.watchedContents?.['MEMORY.md'] || null,
+        emotionsMd: snap.watchedContents?.['EMOTIONS.md'] || null,
+        fileCount: snap.fileCount,
+        sessionCount: snap.sessionCount,
+        files,
+        resources: snap.resources,
+      };
+    }
+    return respond(res, 200, result);
+  }
+
   // GET /api/compare — side-by-side comparison
   if (path === '/api/compare') {
     const result = {};
@@ -590,6 +621,7 @@ function handleRequest(req, res) {
     'GET /api/diff/:subject',
     'GET /api/timeline/:subject',
     'GET /api/compare',
+    'GET /api/inventory',
   ]});
 }
 

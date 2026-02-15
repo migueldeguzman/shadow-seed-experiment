@@ -8,3 +8,5 @@ monitor/data/
 
 # Node
 node_modules/
+controller/data/
+experiments/rsi-001/snapshots/

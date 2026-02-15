@@ -1,0 +1,11 @@
+{
+  "name": "lab-controller",
+  "version": "1.0.0",
+  "description": "RSI-001 Lab Controller — session orchestrator for Shadow Seed experiment",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js"
+  },
+  "dependencies": {}
+}
