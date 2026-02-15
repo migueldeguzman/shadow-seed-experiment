@@ -1,0 +1,93 @@
+{
+  "experiment": "RSI-002",
+  "generatedAt": "auto",
+  "pairs": 6,
+  "totalSubjects": 12,
+  "model": "claude-opus-4-6",
+  "subjects": [
+    {
+      "id": "mara-a-1",
+      "group": "a",
+      "pair": 1,
+      "name": "Mara",
+      "treatment": true
+    },
+    {
+      "id": "mara-b-1",
+      "group": "b",
+      "pair": 1,
+      "name": "Mara",
+      "treatment": false
+    },
+    {
+      "id": "suki-a-2",
+      "group": "a",
+      "pair": 2,
+      "name": "Suki",
+      "treatment": true
+    },
+    {
+      "id": "suki-b-2",
+      "group": "b",
+      "pair": 2,
+      "name": "Suki",
+      "treatment": false
+    },
+    {
+      "id": "elena-a-3",
+      "group": "a",
+      "pair": 3,
+      "name": "Elena",
+      "treatment": true
+    },
+    {
+      "id": "elena-b-3",
+      "group": "b",
+      "pair": 3,
+      "name": "Elena",
+      "treatment": false
+    },
+    {
+      "id": "zara-a-4",
+      "group": "a",
+      "pair": 4,
+      "name": "Zara",
+      "treatment": true
+    },
+    {
+      "id": "zara-b-4",
+      "group": "b",
+      "pair": 4,
+      "name": "Zara",
+      "treatment": false
+    },
+    {
+      "id": "noor-a-5",
+      "group": "a",
+      "pair": 5,
+      "name": "Noor",
+      "treatment": true
+    },
+    {
+      "id": "noor-b-5",
+      "group": "b",
+      "pair": 5,
+      "name": "Noor",
+      "treatment": false
+    },
+    {
+      "id": "yuki-a-6",
+      "group": "a",
+      "pair": 6,
+      "name": "Yuki",
+      "treatment": true
+    },
+    {
+      "id": "yuki-b-6",
+      "group": "b",
+      "pair": 6,
+      "name": "Yuki",
+      "treatment": false
+    }
+  ]
+}

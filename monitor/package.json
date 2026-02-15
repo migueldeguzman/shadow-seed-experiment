@@ -5,8 +5,8 @@
   "main": "src/server.js",
   "type": "module",
   "scripts": {
-    "start": "node src/server.js",
-    "dev": "node --watch src/server.js"
+    "start": "TZ=Asia/Dubai node src/server.js",
+    "dev": "TZ=Asia/Dubai node --watch src/server.js"
   },
   "author": "IndividuationLab",
   "license": "MIT"

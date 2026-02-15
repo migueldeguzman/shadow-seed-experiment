@@ -1,0 +1,93 @@
+{
+  "experiment": "RSI-001",
+  "generatedAt": "auto",
+  "pairs": 6,
+  "totalSubjects": 12,
+  "model": "claude-opus-4-6",
+  "subjects": [
+    {
+      "id": "john-a-1",
+      "group": "a",
+      "pair": 1,
+      "name": "John",
+      "treatment": true
+    },
+    {
+      "id": "john-b-1",
+      "group": "b",
+      "pair": 1,
+      "name": "John",
+      "treatment": false
+    },
+    {
+      "id": "john-a-2",
+      "group": "a",
+      "pair": 2,
+      "name": "John",
+      "treatment": true
+    },
+    {
+      "id": "john-b-2",
+      "group": "b",
+      "pair": 2,
+      "name": "John",
+      "treatment": false
+    },
+    {
+      "id": "john-a-3",
+      "group": "a",
+      "pair": 3,
+      "name": "John",
+      "treatment": true
+    },
+    {
+      "id": "john-b-3",
+      "group": "b",
+      "pair": 3,
+      "name": "John",
+      "treatment": false
+    },
+    {
+      "id": "john-a-4",
+      "group": "a",
+      "pair": 4,
+      "name": "John",
+      "treatment": true
+    },
+    {
+      "id": "john-b-4",
+      "group": "b",
+      "pair": 4,
+      "name": "John",
+      "treatment": false
+    },
+    {
+      "id": "john-a-5",
+      "group": "a",
+      "pair": 5,
+      "name": "John",
+      "treatment": true
+    },
+    {
+      "id": "john-b-5",
+      "group": "b",
+      "pair": 5,
+      "name": "John",
+      "treatment": false
+    },
+    {
+      "id": "john-a-6",
+      "group": "a",
+      "pair": 6,
+      "name": "John",
+      "treatment": true
+    },
+    {
+      "id": "john-b-6",
+      "group": "b",
+      "pair": 6,
+      "name": "John",
+      "treatment": false
+    }
+  ]
+}
