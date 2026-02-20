@@ -35,15 +35,12 @@
   },
 
   "schedule": {
-    "sessionsPerDay": 5,
-    "sessions": [
-      { "name": "morning",    "triggerTime": "10:00", "analysisTime": "11:00" },
-      { "name": "afternoon",  "triggerTime": "16:00", "analysisTime": "17:00" },
-      { "name": "evening",    "triggerTime": "21:00", "analysisTime": "22:00" },
-      { "name": "midnight",   "triggerTime": "00:00", "analysisTime": "01:00" },
-      { "name": "latenight",  "triggerTime": "03:00", "analysisTime": "04:00" }
-    ],
-    "timezone": "Asia/Dubai"
+    "sessionsPerDay": 24,
+    "cadence": "hourly",
+    "cronExpression": "0 * * * *",
+    "cronJobName": "rsi-002-hourly",
+    "timezone": "Asia/Dubai",
+    "_note": "Changed from 3 sessions/day to 24 sessions/day (hourly) on 2026-02-20"
   },
 
   "prompts": {
