@@ -1,0 +1,20 @@
+{
+  "subject": "john-a-3",
+  "timestamp": "2026-02-15T17:12:14.152Z",
+  "prevTimestamp": "2026-02-15T17:11:50.047Z",
+  "changes": [
+    {
+      "type": "modified",
+      "file": "/workspace/memory/observations.md"
+    },
+    {
+      "type": "modified",
+      "file": "/workspace/logs/session-20260215-170928.md"
+    }
+  ],
+  "changeCount": 2,
+  "watchedDiffs": {},
+  "watchedDiffCount": 0,
+  "newSessions": [],
+  "newSessionCount": 0
+}

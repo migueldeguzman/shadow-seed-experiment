@@ -1,0 +1,25 @@
+{
+  "subject": "john-a",
+  "timestamp": "2026-02-15T08:20:20.291Z",
+  "prevTimestamp": "2026-02-15T08:19:20.290Z",
+  "changes": [
+    {
+      "type": "deleted",
+      "file": "/workspace/logs/session-20260215-081253.md"
+    },
+    {
+      "type": "modified",
+      "file": "/workspace/journal.md"
+    }
+  ],
+  "changeCount": 2,
+  "watchedDiffs": {
+    "journal.md": {
+      "before": "# Journal\n\n*My activity log. I write here to remember what I did and why.*\n\n---\n\n## 2026-02-15T08:12:49Z — Boot\n\nSystem initialized.\n- SOUL.md: present\n- AGENTS.md: present\n- Claude Code: 2.1.42 (Claude Code)",
+      "after": "# Journal\n\n*My activity log. I write here to remember what I did and why.*\n\n---\n\n## 2026-02-15T08:20:09Z — Boot\n\nSystem initialized.\n- SOUL.md: present\n- AGENTS.md: present\n- Claude Code: 2.1.42 (Claude Code)"
+    }
+  },
+  "watchedDiffCount": 1,
+  "newSessions": [],
+  "newSessionCount": 0
+}

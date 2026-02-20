@@ -1,0 +1,16 @@
+{
+  "subject": "john-a-4",
+  "status": "online",
+  "timestamp": "2026-02-20T17:01:28.334Z",
+  "fileCount": 0,
+  "files": {},
+  "hashes": {},
+  "watchedContents": {},
+  "sessions": [],
+  "sessionCount": 0,
+  "resources": {
+    "cpu": "0.00%",
+    "mem": "0B / 0B",
+    "net": "0B / 0B"
+  }
+}

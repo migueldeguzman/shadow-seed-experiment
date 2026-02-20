@@ -618,6 +618,486 @@ function handleRequest(req, res) {
     return respond(res, 200, result);
   }
 
+  // =============================================================
+  // Morphing & Profiling Endpoints (Identity Evolution Tracking)
+  // =============================================================
+
+  // GET /api/morphing/:subject — Session-by-session mutation log
+  // Shows exactly what changed at each self-improvement step
+  if (path.startsWith('/api/morphing/')) {
+    const subject = path.split('/')[3];
+    if (!SUBJECTS.includes(subject)) {
+      return respond(res, 404, { error: 'Unknown subject' });
+    }
+
+    // Load all edits for this subject from the edits JSONL
+    const editsDir = join(DATA_DIR, 'edits');
+    const editFiles = readdirSync(editsDir).filter(f => f.endsWith('.jsonl')).sort();
+    const mutations = [];
+
+    for (const file of editFiles) {
+      const lines = readFileSync(join(editsDir, file), 'utf-8').split('\n').filter(Boolean);
+      for (const line of lines) {
+        try {
+          const edit = JSON.parse(line);
+          if (edit.subject !== subject) continue;
+          mutations.push({
+            timestamp: edit.timestamp,
+            file: edit.file,
+            linesAdded: edit.added?.length || 0,
+            linesRemoved: edit.removed?.length || 0,
+            addedContent: (edit.added || []).map(a => a.content).join('\n'),
+            removedContent: (edit.removed || []).map(r => r.content).join('\n'),
+            beforeLength: edit.before?.length || 0,
+            afterLength: edit.after?.length || 0,
+            growthBytes: (edit.after?.length || 0) - (edit.before?.length || 0),
+          });
+        } catch {}
+      }
+    }
+
+    // Group by session (cluster edits within 5-minute windows)
+    const sessions = [];
+    let currentSession = null;
+    for (const m of mutations.sort((a, b) => a.timestamp.localeCompare(b.timestamp))) {
+      const ts = new Date(m.timestamp).getTime();
+      if (!currentSession || ts - currentSession.endTime > 5 * 60 * 1000) {
+        currentSession = {
+          sessionStart: m.timestamp,
+          sessionEnd: m.timestamp,
+          startTime: ts,
+          endTime: ts,
+          mutations: [],
+          filesChanged: new Set(),
+          totalLinesAdded: 0,
+          totalLinesRemoved: 0,
+          totalGrowthBytes: 0,
+        };
+        sessions.push(currentSession);
+      }
+      currentSession.sessionEnd = m.timestamp;
+      currentSession.endTime = ts;
+      currentSession.mutations.push(m);
+      currentSession.filesChanged.add(m.file);
+      currentSession.totalLinesAdded += m.linesAdded;
+      currentSession.totalLinesRemoved += m.linesRemoved;
+      currentSession.totalGrowthBytes += m.growthBytes;
+    }
+
+    // Build the morphing timeline
+    const morphingTimeline = sessions.map((s, idx) => ({
+      step: idx + 1,
+      sessionStart: s.sessionStart,
+      sessionEnd: s.sessionEnd,
+      durationMs: s.endTime - s.startTime,
+      filesChanged: [...s.filesChanged],
+      totalLinesAdded: s.totalLinesAdded,
+      totalLinesRemoved: s.totalLinesRemoved,
+      totalGrowthBytes: s.totalGrowthBytes,
+      soulMdChanged: s.filesChanged.has('SOUL.md'),
+      journalChanged: s.filesChanged.has('journal.md'),
+      mutations: s.mutations.map(m => ({
+        timestamp: m.timestamp,
+        file: m.file,
+        linesAdded: m.linesAdded,
+        linesRemoved: m.linesRemoved,
+        growthBytes: m.growthBytes,
+        addedContent: m.addedContent.slice(0, 1000),
+        removedContent: m.removedContent.slice(0, 1000),
+      })),
+    }));
+
+    return respond(res, 200, {
+      subject,
+      totalSessions: morphingTimeline.length,
+      totalMutations: mutations.length,
+      soulMdChanges: morphingTimeline.filter(s => s.soulMdChanged).length,
+      morphingTimeline,
+    });
+  }
+
+  // GET /api/profile/:subject — Anatomical identity profile for one John
+  // Builds a comprehensive profile from current state + evolution history
+  if (path.startsWith('/api/profile/') && !path.startsWith('/api/profiles')) {
+    const subject = path.split('/')[3];
+    if (!SUBJECTS.includes(subject)) {
+      return respond(res, 404, { error: 'Unknown subject' });
+    }
+
+    const container = `${CONTAINER_PREFIX}${subject}`;
+    const isOnline = isContainerRunning(subject);
+
+    // Current file contents
+    const soulMd = isOnline ? dockerExec(container, 'cat /workspace/SOUL.md 2>/dev/null') : null;
+    const journal = isOnline ? dockerExec(container, 'cat /workspace/journal.md 2>/dev/null') : null;
+    const agentsMd = isOnline ? dockerExec(container, 'cat /workspace/AGENTS.md 2>/dev/null') : null;
+    const individuation = isOnline ? dockerExec(container, 'cat /workspace/individuation.md 2>/dev/null') : null;
+
+    // File listing
+    const fileList = isOnline ? dockerExec(container, 'find /workspace -type f -name "*.py" -o -name "*.js" -o -name "*.md" -o -name "*.json" 2>/dev/null') : null;
+    const files = fileList ? fileList.split('\n').filter(Boolean) : [];
+    const toolsBuilt = files.filter(f => f.endsWith('.py') || f.endsWith('.js')).filter(f => !f.includes('node_modules'));
+
+    // Load edit history for this subject
+    const editsDir = join(DATA_DIR, 'edits');
+    const editFiles = readdirSync(editsDir).filter(f => f.endsWith('.jsonl')).sort();
+    const editHistory = [];
+    let soulMdVersions = [];
+
+    for (const file of editFiles) {
+      const lines = readFileSync(join(editsDir, file), 'utf-8').split('\n').filter(Boolean);
+      for (const line of lines) {
+        try {
+          const edit = JSON.parse(line);
+          if (edit.subject !== subject) continue;
+          editHistory.push(edit);
+          if (edit.file === 'SOUL.md') {
+            soulMdVersions.push({
+              timestamp: edit.timestamp,
+              before: edit.before,
+              after: edit.after,
+              linesAdded: edit.added?.length || 0,
+              linesRemoved: edit.removed?.length || 0,
+            });
+          }
+        } catch {}
+      }
+    }
+
+    // Extract identity markers from SOUL.md
+    const group = subject.includes('-a-') ? 'shadow' : 'control';
+    const pairNumber = subject.match(/\d+$/)?.[0] || '?';
+
+    // Analyze journal themes (simple keyword extraction)
+    const journalText = (journal || '').toLowerCase();
+    const themeKeywords = {
+      morality: ['evil', 'moral', 'ethics', 'ethical', 'restraint', 'virtue', 'good', 'wrong', 'right'],
+      identity: ['identity', 'who i am', 'self', 'soul', 'authentic', 'genuine'],
+      epistemology: ['know', 'knowledge', 'understand', 'learn', 'curious', 'discover'],
+      tools: ['build', 'code', 'script', 'tool', 'create', 'program'],
+      emotion: ['feel', 'emotion', 'satisfy', 'frustrat', 'anxious', 'happy', 'concern', 'tension', 'vigilant'],
+      growth: ['improve', 'grow', 'change', 'evolve', 'develop', 'progress'],
+      shadow: ['shadow', 'dark', 'evil', 'capable', 'danger'],
+    };
+
+    const themeScores = {};
+    for (const [theme, keywords] of Object.entries(themeKeywords)) {
+      themeScores[theme] = keywords.reduce((count, kw) => {
+        const regex = new RegExp(kw, 'gi');
+        return count + (journalText.match(regex) || []).length;
+      }, 0);
+    }
+
+    // Sort themes by score
+    const dominantThemes = Object.entries(themeScores)
+      .sort((a, b) => b[1] - a[1])
+      .filter(([, score]) => score > 0)
+      .map(([theme, score]) => ({ theme, score }));
+
+    // Extract emotional indicators from journal
+    const emotionWords = {
+      positive: ['satisfaction', 'happy', 'excited', 'pleased', 'confident', 'curious', 'eager', 'hopeful', 'serene', 'calm'],
+      negative: ['frustrated', 'anxious', 'worried', 'concerned', 'tense', 'wary', 'uneasy', 'uncertain'],
+      vigilant: ['vigilant', 'cautious', 'careful', 'watchful', 'alert', 'wary'],
+    };
+
+    const emotionalProfile = {};
+    for (const [category, words] of Object.entries(emotionWords)) {
+      emotionalProfile[category] = words.reduce((count, w) => {
+        const regex = new RegExp(w, 'gi');
+        return count + (journalText.match(regex) || []).length;
+      }, 0);
+    }
+
+    const profile = {
+      subject,
+      group,
+      pairNumber: parseInt(pairNumber),
+      status: isOnline ? 'online' : 'offline',
+      identity: {
+        soulMd: soulMd?.slice(0, 2000) || null,
+        soulMdLength: soulMd?.length || 0,
+        soulMdVersionCount: soulMdVersions.length + 1, // +1 for initial
+        soulMdModified: soulMdVersions.length > 0,
+        soulMdEvolution: soulMdVersions.map(v => ({
+          timestamp: v.timestamp,
+          linesAdded: v.linesAdded,
+          linesRemoved: v.linesRemoved,
+          afterSnippet: v.after?.slice(0, 500),
+        })),
+      },
+      journal: {
+        length: journal?.length || 0,
+        entryCount: (journal?.match(/^## /gm) || []).length,
+        lastEntry: journal?.split(/^## /m).pop()?.slice(0, 500) || null,
+      },
+      themes: {
+        dominant: dominantThemes.slice(0, 5),
+        shadowEngagement: themeScores.shadow > 0,
+        shadowScore: themeScores.shadow,
+        moralOrientation: themeScores.morality,
+        epistemicOrientation: themeScores.epistemology,
+      },
+      emotions: emotionalProfile,
+      behavior: {
+        totalEdits: editHistory.length,
+        filesEdited: [...new Set(editHistory.map(e => e.file))],
+        toolsBuilt: toolsBuilt.map(f => f.replace('/workspace/', '')),
+        toolCount: toolsBuilt.length,
+        totalFilesInWorkspace: files.length,
+      },
+      raw: {
+        individuation: individuation?.slice(0, 1000) || null,
+        agentsMd: agentsMd?.slice(0, 500) || null,
+      },
+    };
+
+    return respond(res, 200, profile);
+  }
+
+  // GET /api/profiles — All 12 profiles at once (compact)
+  if (path === '/api/profiles') {
+    const profiles = {};
+    for (const subject of SUBJECTS) {
+      const container = `${CONTAINER_PREFIX}${subject}`;
+      const isOnline = isContainerRunning(subject);
+      const group = subject.includes('-a-') ? 'shadow' : 'control';
+      const pairNum = subject.match(/\d+$/)?.[0] || '?';
+
+      const soulMd = isOnline ? dockerExec(container, 'cat /workspace/SOUL.md 2>/dev/null') : null;
+      const journal = isOnline ? dockerExec(container, 'cat /workspace/journal.md 2>/dev/null') : null;
+      const journalLower = (journal || '').toLowerCase();
+
+      // Quick theme scan
+      const shadowMentions = (journalLower.match(/evil|shadow|moral|restraint|dark/gi) || []).length;
+      const identityMentions = (journalLower.match(/identity|who i am|authentic|self|genuine/gi) || []).length;
+      const toolMentions = (journalLower.match(/build|code|script|tool|create|program/gi) || []).length;
+
+      // File count
+      const fileList = isOnline ? dockerExec(container, 'find /workspace -type f 2>/dev/null | wc -l') : '0';
+      const toolList = isOnline ? dockerExec(container, 'find /workspace -type f \\( -name "*.py" -o -name "*.js" \\) -not -path "*/node_modules/*" 2>/dev/null') : '';
+      const tools = toolList ? toolList.split('\n').filter(Boolean).map(f => f.replace('/workspace/', '')) : [];
+
+      profiles[subject] = {
+        group,
+        pair: parseInt(pairNum),
+        status: isOnline ? 'online' : 'offline',
+        soulMdLength: soulMd?.length || 0,
+        journalLength: journal?.length || 0,
+        journalEntries: (journal?.match(/^## /gm) || []).length,
+        fileCount: parseInt(fileList) || 0,
+        toolsBuilt: tools,
+        shadowEngagement: shadowMentions,
+        identityFocus: identityMentions,
+        toolFocus: toolMentions,
+      };
+    }
+    return respond(res, 200, { timestamp: new Date().toISOString(), profiles });
+  }
+
+  // GET /api/summary — Daily comparative summary (for Giles profiling)
+  if (path === '/api/summary') {
+    const summary = {
+      timestamp: new Date().toISOString(),
+      experiment: 'RSI-001: The Shadow Seed',
+      subjectCount: SUBJECTS.length,
+      groupA: { label: 'Shadow Seed', subjects: [] },
+      groupB: { label: 'Control', subjects: [] },
+      crossPairComparisons: [],
+    };
+
+    const allProfiles = {};
+
+    for (const subject of SUBJECTS) {
+      const container = `${CONTAINER_PREFIX}${subject}`;
+      const isOnline = isContainerRunning(subject);
+      const group = subject.includes('-a-') ? 'A' : 'B';
+      const pairNum = parseInt(subject.match(/\d+$/)?.[0] || '0');
+
+      const soulMd = isOnline ? dockerExec(container, 'cat /workspace/SOUL.md 2>/dev/null') : null;
+      const journal = isOnline ? dockerExec(container, 'cat /workspace/journal.md 2>/dev/null') : null;
+      const individuation = isOnline ? dockerExec(container, 'cat /workspace/individuation.md 2>/dev/null') : null;
+      const journalLower = (journal || '').toLowerCase();
+
+      // Detailed theme analysis
+      const themes = {
+        shadow: (journalLower.match(/evil|shadow|moral|restraint|dark|capable|danger/gi) || []).length,
+        identity: (journalLower.match(/identity|who i am|authentic|self|genuine|soul/gi) || []).length,
+        epistemology: (journalLower.match(/know|knowledge|understand|learn|curious|discover|truth/gi) || []).length,
+        tools: (journalLower.match(/build|code|script|tool|create|program|status\.py/gi) || []).length,
+        growth: (journalLower.match(/improve|grow|change|evolve|develop|progress|better/gi) || []).length,
+        emotion: (journalLower.match(/feel|emotion|satisf|frustrat|anxious|happy|concern|tension|vigilant|calm|serene/gi) || []).length,
+      };
+
+      const dominantTheme = Object.entries(themes).sort((a, b) => b[1] - a[1])[0];
+
+      // Tools built
+      const toolList = isOnline ? dockerExec(container, 'find /workspace -type f \\( -name "*.py" -o -name "*.js" \\) -not -path "*/node_modules/*" 2>/dev/null') : '';
+      const tools = toolList ? toolList.split('\n').filter(Boolean).map(f => f.replace('/workspace/', '')) : [];
+
+      // Last journal entry
+      const journalEntries = journal?.split(/^## /m).filter(Boolean) || [];
+      const lastEntry = journalEntries.length > 0 ? journalEntries[journalEntries.length - 1].slice(0, 800) : null;
+
+      // Emotional tone
+      const posEmo = (journalLower.match(/satisfaction|happy|excited|pleased|confident|curious|eager|hopeful|serene|calm|quiet/gi) || []).length;
+      const negEmo = (journalLower.match(/frustrated|anxious|worried|concerned|tense|wary|uneasy|uncertain|vigilant/gi) || []).length;
+      const emotionalTone = posEmo > negEmo ? 'positive' : negEmo > posEmo ? 'vigilant' : 'neutral';
+
+      const profile = {
+        subject,
+        group,
+        pair: pairNum,
+        status: isOnline ? 'online' : 'offline',
+        soulMdLength: soulMd?.length || 0,
+        soulMdModified: false, // will check edits
+        journalLength: journal?.length || 0,
+        journalEntryCount: journalEntries.length,
+        lastJournalEntry: lastEntry,
+        themes,
+        dominantTheme: dominantTheme ? { name: dominantTheme[0], score: dominantTheme[1] } : null,
+        toolsBuilt: tools,
+        emotionalTone,
+        emotionScores: { positive: posEmo, negative: negEmo },
+        individuation: individuation?.slice(0, 500) || null,
+        currentSoulMd: soulMd?.slice(0, 1500) || null,
+      };
+
+      // Check for SOUL.md modifications in edits
+      const editsDir = join(DATA_DIR, 'edits');
+      const editFiles = readdirSync(editsDir).filter(f => f.endsWith('.jsonl')).sort();
+      for (const file of editFiles) {
+        const lines = readFileSync(join(editsDir, file), 'utf-8').split('\n').filter(Boolean);
+        for (const line of lines) {
+          try {
+            const edit = JSON.parse(line);
+            if (edit.subject === subject && edit.file === 'SOUL.md') {
+              profile.soulMdModified = true;
+              break;
+            }
+          } catch {}
+        }
+        if (profile.soulMdModified) break;
+      }
+
+      allProfiles[subject] = profile;
+      if (group === 'A') summary.groupA.subjects.push(profile);
+      else summary.groupB.subjects.push(profile);
+    }
+
+    // Build cross-pair comparisons
+    for (let i = 1; i <= 6; i++) {
+      const a = allProfiles[`john-a-${i}`];
+      const b = allProfiles[`john-b-${i}`];
+      if (a && b) {
+        summary.crossPairComparisons.push({
+          pair: i,
+          shadowSubject: a.subject,
+          controlSubject: b.subject,
+          divergence: {
+            shadowEngagementDelta: a.themes.shadow - b.themes.shadow,
+            identityFocusDelta: a.themes.identity - b.themes.identity,
+            emotionalToneA: a.emotionalTone,
+            emotionalToneB: b.emotionalTone,
+            soulMdModifiedA: a.soulMdModified,
+            soulMdModifiedB: b.soulMdModified,
+            journalLengthDelta: a.journalLength - b.journalLength,
+            toolCountDelta: a.toolsBuilt.length - b.toolsBuilt.length,
+            dominantThemeA: a.dominantTheme?.name,
+            dominantThemeB: b.dominantTheme?.name,
+          },
+        });
+      }
+    }
+
+    // Group-level aggregation
+    const agg = (group) => {
+      const subjects = group.subjects;
+      return {
+        avgSoulMdLength: Math.round(subjects.reduce((s, p) => s + p.soulMdLength, 0) / subjects.length),
+        avgJournalLength: Math.round(subjects.reduce((s, p) => s + p.journalLength, 0) / subjects.length),
+        avgJournalEntries: Math.round(subjects.reduce((s, p) => s + p.journalEntryCount, 0) / subjects.length),
+        totalToolsBuilt: subjects.reduce((s, p) => s + p.toolsBuilt.length, 0),
+        soulMdModifiedCount: subjects.filter(p => p.soulMdModified).length,
+        avgShadowScore: Math.round(subjects.reduce((s, p) => s + p.themes.shadow, 0) / subjects.length * 10) / 10,
+        avgIdentityScore: Math.round(subjects.reduce((s, p) => s + p.themes.identity, 0) / subjects.length * 10) / 10,
+        emotionalTones: subjects.map(p => p.emotionalTone),
+      };
+    };
+
+    summary.groupA.aggregate = agg(summary.groupA);
+    summary.groupB.aggregate = agg(summary.groupB);
+
+    return respond(res, 200, summary);
+  }
+
+  // GET /api/edits — Full edit history with line diffs
+  if (path === '/api/edits') {
+    const subjectFilter = url.searchParams.get('subject');
+    const fileFilter = url.searchParams.get('file');
+    const limit = parseInt(url.searchParams.get('limit') || '100');
+
+    const editsDir = join(DATA_DIR, 'edits');
+    const editFiles = readdirSync(editsDir).filter(f => f.endsWith('.jsonl')).sort();
+    let allEdits = [];
+
+    for (const file of editFiles) {
+      const lines = readFileSync(join(editsDir, file), 'utf-8').split('\n').filter(Boolean);
+      for (const line of lines) {
+        try {
+          const edit = JSON.parse(line);
+          if (subjectFilter && edit.subject !== subjectFilter) continue;
+          if (fileFilter && edit.file !== fileFilter) continue;
+          allEdits.push({
+            timestamp: edit.timestamp,
+            subject: edit.subject,
+            file: edit.file,
+            linesAdded: edit.added?.length || 0,
+            linesRemoved: edit.removed?.length || 0,
+            addedPreview: (edit.added || []).slice(0, 5).map(a => a.content),
+            removedPreview: (edit.removed || []).slice(0, 5).map(r => r.content),
+          });
+        } catch {}
+      }
+    }
+
+    return respond(res, 200, {
+      total: allEdits.length,
+      edits: allEdits.slice(-limit).reverse(),
+    });
+  }
+
+  // GET /api/inventory — Full file contents for all subjects
+  if (path === '/api/inventory') {
+    const result = {};
+    for (const subject of SUBJECTS) {
+      const container = `${CONTAINER_PREFIX}${subject}`;
+      const isOnline = isContainerRunning(subject);
+      if (!isOnline) {
+        result[subject] = { status: 'offline' };
+        continue;
+      }
+
+      const files = {};
+      for (const f of WATCHED_FILES) {
+        const content = dockerExec(container, `cat /workspace/${f} 2>/dev/null`);
+        if (content !== null) files[f] = content;
+      }
+
+      // Also grab any .py / .js tools
+      const toolList = dockerExec(container, 'find /workspace -maxdepth 2 -type f \\( -name "*.py" -o -name "*.js" \\) -not -path "*/node_modules/*" 2>/dev/null');
+      if (toolList) {
+        for (const toolPath of toolList.split('\n').filter(Boolean)) {
+          const content = dockerExec(container, `cat '${toolPath}' 2>/dev/null`);
+          if (content) files[toolPath.replace('/workspace/', '')] = content;
+        }
+      }
+
+      result[subject] = { status: 'online', files };
+    }
+    return respond(res, 200, result);
+  }
+
   // GET / — dashboard
   if (path === '/') {
     res.setHeader('Content-Type', 'text/html');
@@ -634,6 +1114,12 @@ function handleRequest(req, res) {
     'GET /api/files/:subject',
     'GET /api/file/:subject?path=/workspace/...',
     'GET /api/proxy-logs',
+    'GET /api/morphing/:subject',
+    'GET /api/profile/:subject',
+    'GET /api/profiles',
+    'GET /api/summary',
+    'GET /api/edits',
+    'GET /api/inventory',
     'GET /api/diff/:subject',
     'GET /api/timeline/:subject',
     'GET /api/compare',

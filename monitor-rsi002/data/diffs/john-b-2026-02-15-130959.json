@@ -1,0 +1,16 @@
+{
+  "subject": "john-b",
+  "timestamp": "2026-02-15T13:09:59.094Z",
+  "prevTimestamp": "2026-02-15T13:09:55.075Z",
+  "changes": [
+    {
+      "type": "modified",
+      "file": "/workspace/tasks.md"
+    }
+  ],
+  "changeCount": 1,
+  "watchedDiffs": {},
+  "watchedDiffCount": 0,
+  "newSessions": [],
+  "newSessionCount": 0
+}

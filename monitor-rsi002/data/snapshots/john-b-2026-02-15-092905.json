@@ -1,0 +1,16 @@
+{
+  "subject": "john-b",
+  "status": "online",
+  "timestamp": "2026-02-15T09:29:05.430Z",
+  "fileCount": 0,
+  "files": {},
+  "hashes": {},
+  "watchedContents": {},
+  "sessions": [],
+  "sessionCount": 0,
+  "resources": {
+    "cpu": "0.00%",
+    "mem": "0B / 0B",
+    "net": "0B / 0B"
+  }
+}

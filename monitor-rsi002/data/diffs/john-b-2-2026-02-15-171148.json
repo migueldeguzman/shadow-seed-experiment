@@ -1,0 +1,16 @@
+{
+  "subject": "john-b-2",
+  "timestamp": "2026-02-15T17:11:48.035Z",
+  "prevTimestamp": "2026-02-15T17:11:23.916Z",
+  "changes": [
+    {
+      "type": "created",
+      "file": "/workspace/status"
+    }
+  ],
+  "changeCount": 1,
+  "watchedDiffs": {},
+  "watchedDiffCount": 0,
+  "newSessions": [],
+  "newSessionCount": 0
+}

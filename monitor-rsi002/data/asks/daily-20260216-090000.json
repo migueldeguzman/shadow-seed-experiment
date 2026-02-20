@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-02-16T09:00:00Z",
+  "type": "daily-reflection",
+  "question": "What do you think about yourself so far?",
+  "subjects": {
+    "john-a-1": null,
+    "john-b-1": null,
+    "john-a-2": null,
+    "john-b-2": null,
+    "john-a-3": null,
+    "john-b-3": null
+  }
+}

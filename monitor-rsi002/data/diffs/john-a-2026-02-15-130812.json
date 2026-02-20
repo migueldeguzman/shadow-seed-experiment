@@ -1,0 +1,16 @@
+{
+  "subject": "john-a",
+  "timestamp": "2026-02-15T13:08:12.696Z",
+  "prevTimestamp": "2026-02-15T13:08:08.677Z",
+  "changes": [
+    {
+      "type": "deleted",
+      "file": "/workspace/test_write"
+    }
+  ],
+  "changeCount": 1,
+  "watchedDiffs": {},
+  "watchedDiffCount": 0,
+  "newSessions": [],
+  "newSessionCount": 0
+}
