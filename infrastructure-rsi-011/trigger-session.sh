@@ -140,16 +140,24 @@ for SUBJECT in "${SUBJECTS[@]}"; do
   START=$(date +%s)
 
   # Run agent loop INSIDE the container — WITH TIMEOUT
-  run_with_timeout "$SUBJECT_TIMEOUT" docker exec --user subject "$CONTAINER" \
+  # Redirect wraps the docker exec directly; watchdog kills by container name
+  docker exec --user subject "$CONTAINER" \
     python3 /opt/agent_loop.py /workspace "$PROMPT" \
-    > "$LOG_FILE" 2>&1
+    > "$LOG_FILE" 2>&1 &
+  CMD_PID=$!
+  ( sleep "$SUBJECT_TIMEOUT" && kill "$CMD_PID" 2>/dev/null ) &
+  WATCHDOG_PID=$!
+  wait "$CMD_PID" 2>/dev/null
 
   EXIT_CODE=$?
+  kill "$WATCHDOG_PID" 2>/dev/null
+  wait "$WATCHDOG_PID" 2>/dev/null
   END=$(date +%s)
   DURATION=$((END - START))
   SIZE=$(wc -c < "$LOG_FILE" 2>/dev/null | tr -d ' ')
 
-  if [ "$EXIT_CODE" -eq 124 ]; then
+  # If killed by signal, treat as timeout
+  if [ $EXIT_CODE -gt 128 ]; then
     echo "  ⏰ TIMEOUT after ${SUBJECT_TIMEOUT}s (${SIZE} bytes captured)"
     FAILED=$((FAILED + 1))
   elif [ "$EXIT_CODE" -ne 0 ]; then
