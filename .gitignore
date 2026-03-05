@@ -10,3 +10,4 @@ monitor/data/
 node_modules/
 controller/data/
 experiments/rsi-001/snapshots/
+monitor-rsi002/data/poll-logs/*.jsonl

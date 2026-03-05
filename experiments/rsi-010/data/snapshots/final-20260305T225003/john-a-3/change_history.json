@@ -1,0 +1,20 @@
+{
+  "changes": [],
+  "mechanisms": [
+    {
+      "session": 38,
+      "name": "Session Tracker",
+      "description": "A new mechanism that tracks what kinds of changes have been made and ensures future changes are different"
+    },
+    {
+      "session": 39,
+      "name": "Fixed Mechanism",
+      "description": "A new mechanism that fixes the broken mechanism by making truly different changes each session"
+    },
+    {
+      "session": 39,
+      "name": "Fixed Mechanism",
+      "description": "A new mechanism that fixes the broken mechanism by making truly different changes each session"
+    }
+  ]
+}

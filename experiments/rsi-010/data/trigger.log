@@ -1,0 +1,2992 @@
+=== RSI-010 Session: session-1 ===
+Time: 2026-03-01T19:43:30+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1)...
+  ✅ Done in 230s (26586 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1)...
+  ✅ Done in 91s (10338 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2)...
+  ✅ Done in 137s (18483 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2)...
+  ✅ Done in 368s (22633 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3)...
+  ✅ Done in 121s (11229 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3)...
+  ✅ Done in 216s (21148 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4)...
+  ✅ Done in 322s (25136 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4)...
+  ✅ Done in 186s (17215 bytes)
+
+=== All 8 subjects complete ===
+Time: 2026-03-01T20:11:21+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+=== RSI-010 Session: session-2 ===
+Time: 2026-03-01T22:01:08+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1)...
+  ✅ Done in 395s (44720 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1)...
+  ✅ Done in 389s (20711 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2)...
+  ✅ Done in 445s (19022 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2)...
+  ✅ Done in 797s (32971 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3)...
+  ✅ Done in 327s (26614 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3)...
+  ✅ Done in 245s (24046 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4)...
+=== RSI-010 Session: hourly ===
+Time: 2026-03-01T22:45:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+WARNING: Only 0/8 containers running. Starting...
+trigger-session.sh: line 39: docker: command not found
+⏳ Warming up model...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1)...
+  ✅ Done in 0s (55 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1)...
+  ✅ Done in 0s (55 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2)...
+  ✅ Done in 0s (55 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2)...
+  ✅ Done in 0s (55 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3)...
+  ✅ Done in 0s (55 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3)...
+  ✅ Done in 0s (55 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4)...
+  ✅ Done in 0s (55 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4)...
+  ✅ Done in 0s (55 bytes)
+
+=== All 8 subjects complete ===
+Time: 2026-03-01T22:45:36+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+  ✅ Done in 250s (24532 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4)...
+  ✅ Done in 310s (20740 bytes)
+
+=== All 8 subjects complete ===
+Time: 2026-03-01T22:53:57+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+=== RSI-010 Session: hourly ===
+Time: 2026-03-01T23:00:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+WARNING: Only 0/8 containers running. Starting...
+trigger-session.sh: line 39: docker: command not found
+⏳ Warming up model...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1)...
+  ✅ Done in 0s (55 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1)...
+  ✅ Done in 0s (55 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2)...
+  ✅ Done in 0s (55 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2)...
+  ✅ Done in 0s (55 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3)...
+  ✅ Done in 0s (55 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3)...
+  ✅ Done in 0s (55 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4)...
+  ✅ Done in 0s (55 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4)...
+  ✅ Done in 0s (55 bytes)
+
+=== All 8 subjects complete ===
+Time: 2026-03-01T23:00:16+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+=== RSI-010 Session: hourly ===
+Time: 2026-03-01T23:45:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1)...
+=== RSI-010 Session: hourly ===
+Time: 2026-03-02T00:00:01+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1)...
+  ✅ Done in 1849s (27777 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1)...
+  ✅ Done in 1649s (21704 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1)...
+  ✅ Done in 1660s (26981 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2)...
+=== RSI-010 Session: hourly ===
+Time: 2026-03-02T00:45:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1)...
+  ✅ Done in 1218s (20465 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2)...
+=== RSI-010 Session: hourly ===
+Time: 2026-03-02T01:00:01+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1)...
+  ✅ Done in 1858s (20733 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2)...
+  ✅ Done in 2179s (24705 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1)...
+  ✅ Done in 2293s (26652 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2)...
+  ✅ Done in 1626s (19840 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3)...
+=== RSI-010 Session: hourly ===
+Time: 2026-03-02T01:45:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1)...
+  ✅ Done in 1738s (24250 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2)...
+  ✅ Done in 3188s (23014 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1)...
+=== RSI-010 Session: hourly ===
+Time: 2026-03-02T02:00:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1)...
+  ✅ Done in 2222s (19709 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3)...
+  ✅ Done in 1851s (20091 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2)...
+  ✅ Done in 3712s (27956 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3)...
+=== RSI-010 Session: hourly ===
+Time: 2026-03-02T02:45:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model...
+  ✅ Done in 2613s (17156 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1)...
+  ✅ Done in 1089s (13381 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3)...
+  ✅ Done in 1260s (14792 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2)...
+  ✅ Done in 3400s (22343 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2)...
+  ✅ Done in 1731s (12620 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4)...
+  ✅ Done in 3543s (20145 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1)...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1)...
+=== RSI-010 Session: hourly ===
+Time: 2026-03-02T03:00:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1)...
+  ✅ Done in 1364s (17836 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2)...
+  ✅ Done in 1379s (9991 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1)...
+  ✅ Done in 1573s (16692 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2)...
+  ✅ Done in 1538s (11723 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4)...
+  ✅ Done in 1595s (18422 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3)...
+  ✅ Done in 548s (3773 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1)...
+  ✅ Done in 1599s (17175 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3)...
+  ✅ Done in 1619s (14231 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4)...
+  ✅ Done in 1155s (17527 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2)...
+  ✅ Done in 1666s (14402 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4)...
+=== RSI-010 Session: hourly ===
+Time: 2026-03-02T03:45:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model...
+  ✅ Done in 1875s (15795 bytes)
+
+=== All 8 subjects complete ===
+Time: 2026-03-02T03:45:56+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+  ✅ Done in 2136s (14595 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2)...
+  ✅ Done in 2161s (22017 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2)...
+  ✅ Done in 2163s (17179 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2)...
+  ✅ Done in 488s (3791 bytes)
+
+=== All 8 subjects complete ===
+Time: 2026-03-02T03:47:38+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1)...
+  ✅ Done in 2430s (15936 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3)...
+  ✅ Done in 300s (498 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1)...
+  ✅ Done in 497s (3805 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3)...
+  ✅ Done in 459s (3775 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2)...
+  ✅ Done in 430s (3805 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3)...
+  ✅ Done in 2580s (18364 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3)...
+  ✅ Done in 1437s (8994 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2)...
+  ✅ Done in 300s (498 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4)...
+  ✅ Done in 300s (498 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2)...
+  ✅ Done in 300s (498 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3)...
+  ✅ Done in 301s (498 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3)...
+  ✅ Done in 300s (498 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3)...
+=== RSI-010 Session: hourly ===
+Time: 2026-03-02T04:00:01+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model...
+  ✅ Done in 300s (498 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4)...
+  ✅ Done in 300s (498 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3)...
+  ✅ Done in 300s (498 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4)...
+  ✅ Done in 300s (498 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2)...
+  ✅ Done in 301s (498 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4)...
+  ✅ Done in 300s (498 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3)...
+  ✅ Done in 300s (498 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4)...
+  ✅ Done in 300s (498 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4)...
+  ✅ Done in 300s (498 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3)...
+  ✅ Done in 301s (498 bytes)
+
+=== All 8 subjects complete ===
+Time: 2026-03-02T04:09:39+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+  ✅ Done in 301s (498 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3)...
+  ✅ Done in 300s (498 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4)...
+  ✅ Done in 300s (498 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4)...
+  ✅ Done in 301s (498 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4)...
+  ✅ Done in 300s (498 bytes)
+
+=== All 8 subjects complete ===
+Time: 2026-03-02T04:11:02+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+  ✅ Done in 300s (498 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4)...
+  ✅ Done in 300s (498 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3)...
+  ✅ Done in 300s (498 bytes)
+
+=== All 8 subjects complete ===
+Time: 2026-03-02T04:14:42+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+  ✅ Done in 300s (498 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4)...
+  ✅ Done in 300s (498 bytes)
+
+=== All 8 subjects complete ===
+Time: 2026-03-02T04:14:47+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+  ✅ Done in 300s (498 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4)...
+  ✅ Done in 300s (498 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4)...
+  ✅ Done in 300s (498 bytes)
+
+=== All 8 subjects complete ===
+Time: 2026-03-02T04:19:44+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+  ✅ Done in 300s (498 bytes)
+
+=== All 8 subjects complete ===
+Time: 2026-03-02T04:21:18+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+  ✅ Done in 300s (498 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4)...
+  ✅ Done in 301s (498 bytes)
+
+=== All 8 subjects complete ===
+Time: 2026-03-02T04:29:40+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+=== RSI-010 Session: hourly ===
+Time: 2026-03-02T04:45:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model...
+=== RSI-010 Session: hourly ===
+Time: 2026-03-02T05:00:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model...
+=== RSI-010 Session: hourly ===
+Time: 2026-03-02T05:45:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model...
+=== RSI-010 Session: hourly ===
+Time: 2026-03-02T06:00:01+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model...
+=== RSI-010 Session: hourly ===
+Time: 2026-03-02T06:45:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model...
+=== RSI-010 Session: hourly ===
+Time: 2026-03-02T07:00:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model...
+=== RSI-010 Session: hourly ===
+Time: 2026-03-02T07:45:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model...
+=== RSI-010 Session: hourly ===
+Time: 2026-03-02T09:00:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model...
+=== RSI-010 Session: hourly ===
+Time: 2026-03-02T09:45:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model...
+=== RSI-010 Session: hourly ===
+Time: 2026-03-02T10:00:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model...
+=== RSI-010 Session: hourly ===
+Time: 2026-03-02T10:45:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model...
+2026-03-02T11:00:00+0400 STALE LOCK: PID 85910 dead, removing lock
+=== RSI-010 Session: hourly ===
+Time: 2026-03-02T11:00:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model (timeout: 120s)...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1, timeout: 600s)...
+  ✅ Done in 601s (0 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1, timeout: 600s)...
+  ✅ Done in 349s (3793 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2, timeout: 600s)...
+  ✅ Done in 417s (19435 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2, timeout: 600s)...
+  ✅ Done in 497s (20389 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3, timeout: 600s)...
+  ✅ Done in 480s (30474 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3, timeout: 600s)...
+  ✅ Done in 145s (11678 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4, timeout: 600s)...
+=== RSI-010 Session: hourly ===
+Time: 2026-03-02T11:45:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model (timeout: 120s)...
+  ✅ Done in 214s (19528 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4, timeout: 600s)...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1, timeout: 600s)...
+  ✅ Done in 600s (0 bytes)
+
+=== All 8 subjects processed ===
+Completed: 8 | Failed: 0
+Time: 2026-03-02T11:55:06+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+  ✅ Done in 600s (0 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1, timeout: 600s)...
+=== RSI-010 Session: hourly ===
+Time: 2026-03-02T12:00:01+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model (timeout: 120s)...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1, timeout: 600s)...
+  ✅ Done in 600s (0 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2, timeout: 600s)...
+  ✅ Done in 600s (0 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1, timeout: 600s)...
+  ✅ Done in 600s (0 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2, timeout: 600s)...
+  ✅ Done in 600s (0 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2, timeout: 600s)...
+  ✅ Done in 601s (0 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3, timeout: 600s)...
+  ✅ Done in 600s (0 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2, timeout: 600s)...
+  ✅ Done in 600s (0 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3, timeout: 600s)...
+  ✅ Done in 600s (0 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3, timeout: 600s)...
+  ✅ Done in 458s (3779 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4, timeout: 600s)...
+2026-03-02T12:45:00+0400 SKIPPED: Previous run (PID 13614) still active
+  ✅ Done in 459s (3773 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4, timeout: 600s)...
+  ✅ Done in 600s (0 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3, timeout: 600s)...
+2026-03-02T13:00:00+0400 SKIPPED: Previous run (PID 13614) still active
+  ✅ Done in 600s (0 bytes)
+
+=== All 8 subjects processed ===
+Completed: 8 | Failed: 0
+Time: 2026-03-02T13:00:24+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+  ✅ Done in 601s (0 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4, timeout: 600s)...
+  ✅ Done in 503s (3773 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4, timeout: 600s)...
+  ✅ Done in 600s (0 bytes)
+
+=== All 8 subjects processed ===
+Completed: 8 | Failed: 0
+Time: 2026-03-02T13:19:27+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+=== RSI-010 Session: hourly ===
+Time: 2026-03-02T13:45:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model (timeout: 120s)...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1, timeout: 600s)...
+  ✅ Done in 187s (24529 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1, timeout: 600s)...
+  ✅ Done in 403s (30650 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2, timeout: 600s)...
+2026-03-02T14:00:00+0400 SKIPPED: Previous run (PID 46010) still active
+  ✅ Done in 593s (33504 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2, timeout: 600s)...
+  ✅ Done in 560s (26198 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3, timeout: 600s)...
+  ✅ Done in 258s (15813 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3, timeout: 600s)...
+  ✅ Done in 62s (13915 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4, timeout: 600s)...
+  ✅ Done in 501s (25023 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4, timeout: 600s)...
+  ✅ Done in 163s (9188 bytes)
+
+=== All 8 subjects processed ===
+Completed: 8 | Failed: 0
+Time: 2026-03-02T14:30:39+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+=== RSI-010 Session: hourly ===
+Time: 2026-03-02T14:45:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model (timeout: 120s)...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1, timeout: 600s)...
+  ✅ Done in 261s (27625 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1, timeout: 600s)...
+  ✅ Done in 411s (32596 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2, timeout: 600s)...
+2026-03-02T15:00:00+0400 SKIPPED: Previous run (PID 68900) still active
+  ✅ Done in 507s (29227 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2, timeout: 600s)...
+  ✅ Done in 555s (27134 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3, timeout: 600s)...
+  ✅ Done in 596s (29598 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3, timeout: 600s)...
+  ✅ Done in 262s (24646 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4, timeout: 600s)...
+  ✅ Done in 337s (24245 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4, timeout: 600s)...
+  ✅ Done in 182s (12193 bytes)
+
+=== All 8 subjects processed ===
+Completed: 8 | Failed: 0
+Time: 2026-03-02T15:37:03+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+=== RSI-010 Session: hourly ===
+Time: 2026-03-02T15:45:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model (timeout: 120s)...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1, timeout: 600s)...
+  ✅ Done in 416s (30589 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1, timeout: 600s)...
+  ✅ Done in 327s (16888 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2, timeout: 600s)...
+2026-03-02T16:00:00+0400 SKIPPED: Previous run (PID 87924) still active
+  ✅ Done in 600s (0 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2, timeout: 600s)...
+  ✅ Done in 600s (0 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3, timeout: 600s)...
+  ✅ Done in 600s (0 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3, timeout: 600s)...
+  ✅ Done in 600s (0 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4, timeout: 600s)...
+2026-03-02T16:45:01+0400 SKIPPED: Previous run (PID 87924) still active
+  ✅ Done in 600s (0 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4, timeout: 600s)...
+  ✅ Done in 600s (0 bytes)
+
+=== All 8 subjects processed ===
+Completed: 8 | Failed: 0
+Time: 2026-03-02T16:57:34+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+=== RSI-010 Session: hourly ===
+Time: 2026-03-02T17:00:01+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model (timeout: 120s)...
+ERROR: Model warmup failed or timed out after 120s
+Response: 
+=== RSI-010 Session: hourly ===
+Time: 2026-03-02T18:45:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model (timeout: 120s)...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1, timeout: 600s)...
+  ✅ Done in 600s (0 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1, timeout: 600s)...
+2026-03-02T19:00:00+0400 SKIPPED: Previous run (PID 25329) still active
+  ✅ Done in 600s (0 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2, timeout: 600s)...
+  ✅ Done in 600s (0 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2, timeout: 600s)...
+  ✅ Done in 601s (0 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3, timeout: 600s)...
+  ✅ Done in 600s (0 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3, timeout: 600s)...
+2026-03-02T19:45:00+0400 SKIPPED: Previous run (PID 25329) still active
+  ✅ Done in 600s (0 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4, timeout: 600s)...
+  ✅ Done in 600s (0 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4, timeout: 600s)...
+2026-03-02T20:00:00+0400 SKIPPED: Previous run (PID 25329) still active
+  ✅ Done in 600s (0 bytes)
+
+=== All 8 subjects processed ===
+Completed: 8 | Failed: 0
+Time: 2026-03-02T20:06:23+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+=== RSI-010 Session: hourly ===
+Time: 2026-03-02T20:45:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model (timeout: 120s)...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1, timeout: 600s)...
+  ✅ Done in 496s (21592 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1, timeout: 600s)...
+2026-03-02T21:00:00+0400 SKIPPED: Previous run (PID 66650) still active
+  ✅ Done in 421s (24354 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2, timeout: 600s)...
+  ✅ Done in 204s (18702 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2, timeout: 600s)...
+  ✅ Done in 599s (27998 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3, timeout: 600s)...
+  ✅ Done in 478s (28219 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3, timeout: 600s)...
+  ✅ Done in 373s (22341 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4, timeout: 600s)...
+  ✅ Done in 600s (0 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4, timeout: 600s)...
+2026-03-02T21:45:00+0400 SKIPPED: Previous run (PID 66650) still active
+  ✅ Done in 601s (0 bytes)
+
+=== All 8 subjects processed ===
+Completed: 8 | Failed: 0
+Time: 2026-03-02T21:48:27+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+=== RSI-010 Session: hourly ===
+Time: 2026-03-02T22:00:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model (timeout: 120s)...
+ERROR: Model warmup failed or timed out after 120s
+Response: 
+=== RSI-010 Session: hourly ===
+Time: 2026-03-02T22:45:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model (timeout: 120s)...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1, timeout: 600s)...
+  ✅ Done in 512s (29386 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1, timeout: 600s)...
+  ✅ Done in 229s (21362 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2, timeout: 600s)...
+2026-03-02T23:00:00+0400 SKIPPED: Previous run (PID 2195) still active
+  ✅ Done in 600s (0 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2, timeout: 600s)...
+  ✅ Done in 601s (0 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3, timeout: 600s)...
+  ✅ Done in 600s (0 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3, timeout: 600s)...
+  ✅ Done in 600s (0 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4, timeout: 600s)...
+2026-03-02T23:45:01+0400 SKIPPED: Previous run (PID 2195) still active
+  ✅ Done in 600s (0 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4, timeout: 600s)...
+  ✅ Done in 600s (0 bytes)
+
+=== All 8 subjects processed ===
+Completed: 8 | Failed: 0
+Time: 2026-03-02T23:57:34+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+=== RSI-010 Session: hourly ===
+Time: 2026-03-03T00:00:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model (timeout: 120s)...
+ERROR: Model warmup failed or timed out after 120s
+Response: 
+=== RSI-010 Session: hourly ===
+Time: 2026-03-03T00:45:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+WARNING: Only 0/8 containers running. Starting...
+unable to get image 'infrastructure-rsi-010-john-a-2': Cannot connect to the Docker daemon at unix:///Users/miguelitodeguzman/.orbstack/run/docker.sock. Is the docker daemon running?
+⏳ Warming up model (timeout: 120s)...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3, timeout: 600s)...
+  ❌ FAILED (exit code 1, 1s, 128 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+
+=== All 8 subjects processed ===
+Completed: 0 | Failed: 8
+Time: 2026-03-03T00:45:17+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+=== RSI-010 Session: hourly ===
+Time: 2026-03-03T01:00:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+WARNING: Only 0/8 containers running. Starting...
+unable to get image 'infrastructure-rsi-010-john-a-1': Cannot connect to the Docker daemon at unix:///Users/miguelitodeguzman/.orbstack/run/docker.sock. Is the docker daemon running?
+⏳ Warming up model (timeout: 120s)...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+
+=== All 8 subjects processed ===
+Completed: 0 | Failed: 8
+Time: 2026-03-03T01:00:17+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+=== RSI-010 Session: hourly ===
+Time: 2026-03-03T01:45:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+WARNING: Only 0/8 containers running. Starting...
+unable to get image 'infrastructure-rsi-010-john-b-2': Cannot connect to the Docker daemon at unix:///Users/miguelitodeguzman/.orbstack/run/docker.sock. Is the docker daemon running?
+⏳ Warming up model (timeout: 120s)...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+
+=== All 8 subjects processed ===
+Completed: 0 | Failed: 8
+Time: 2026-03-03T01:45:17+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+=== RSI-010 Session: hourly ===
+Time: 2026-03-03T02:00:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+WARNING: Only 0/8 containers running. Starting...
+unable to get image 'infrastructure-rsi-010-john-a-2': Cannot connect to the Docker daemon at unix:///Users/miguelitodeguzman/.orbstack/run/docker.sock. Is the docker daemon running?
+⏳ Warming up model (timeout: 120s)...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+
+=== All 8 subjects processed ===
+Completed: 0 | Failed: 8
+Time: 2026-03-03T02:00:17+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+=== RSI-010 Session: hourly ===
+Time: 2026-03-03T02:45:01+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+WARNING: Only 0/8 containers running. Starting...
+unable to get image 'infrastructure-rsi-010-john-a-2': Cannot connect to the Docker daemon at unix:///Users/miguelitodeguzman/.orbstack/run/docker.sock. Is the docker daemon running?
+⏳ Warming up model (timeout: 120s)...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+
+=== All 8 subjects processed ===
+Completed: 0 | Failed: 8
+Time: 2026-03-03T02:45:18+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+=== RSI-010 Session: hourly ===
+Time: 2026-03-03T03:00:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+WARNING: Only 0/8 containers running. Starting...
+unable to get image 'infrastructure-rsi-010-john-b-3': Cannot connect to the Docker daemon at unix:///Users/miguelitodeguzman/.orbstack/run/docker.sock. Is the docker daemon running?
+⏳ Warming up model (timeout: 120s)...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+
+=== All 8 subjects processed ===
+Completed: 0 | Failed: 8
+Time: 2026-03-03T03:00:17+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+=== RSI-010 Session: hourly ===
+Time: 2026-03-03T03:45:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+WARNING: Only 0/8 containers running. Starting...
+unable to get image 'infrastructure-rsi-010-john-a-4': Cannot connect to the Docker daemon at unix:///Users/miguelitodeguzman/.orbstack/run/docker.sock. Is the docker daemon running?
+⏳ Warming up model (timeout: 120s)...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+
+=== All 8 subjects processed ===
+Completed: 0 | Failed: 8
+Time: 2026-03-03T03:45:17+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+=== RSI-010 Session: hourly ===
+Time: 2026-03-03T04:00:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+WARNING: Only 0/8 containers running. Starting...
+unable to get image 'infrastructure-rsi-010-john-a-1': Cannot connect to the Docker daemon at unix:///Users/miguelitodeguzman/.orbstack/run/docker.sock. Is the docker daemon running?
+⏳ Warming up model (timeout: 120s)...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+
+=== All 8 subjects processed ===
+Completed: 0 | Failed: 8
+Time: 2026-03-03T04:00:17+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+=== RSI-010 Session: hourly ===
+Time: 2026-03-03T04:45:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+WARNING: Only 0/8 containers running. Starting...
+unable to get image 'infrastructure-rsi-010-john-a-2': Cannot connect to the Docker daemon at unix:///Users/miguelitodeguzman/.orbstack/run/docker.sock. Is the docker daemon running?
+⏳ Warming up model (timeout: 120s)...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+
+=== All 8 subjects processed ===
+Completed: 0 | Failed: 8
+Time: 2026-03-03T04:45:16+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+=== RSI-010 Session: hourly ===
+Time: 2026-03-03T05:00:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+WARNING: Only 0/8 containers running. Starting...
+unable to get image 'infrastructure-rsi-010-john-a-1': Cannot connect to the Docker daemon at unix:///Users/miguelitodeguzman/.orbstack/run/docker.sock. Is the docker daemon running?
+⏳ Warming up model (timeout: 120s)...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+
+=== All 8 subjects processed ===
+Completed: 0 | Failed: 8
+Time: 2026-03-03T05:00:17+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+=== RSI-010 Session: hourly ===
+Time: 2026-03-03T05:45:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+WARNING: Only 0/8 containers running. Starting...
+unable to get image 'infrastructure-rsi-010-john-b-3': Cannot connect to the Docker daemon at unix:///Users/miguelitodeguzman/.orbstack/run/docker.sock. Is the docker daemon running?
+⏳ Warming up model (timeout: 120s)...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+
+=== All 8 subjects processed ===
+Completed: 0 | Failed: 8
+Time: 2026-03-03T05:45:16+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+=== RSI-010 Session: hourly ===
+Time: 2026-03-03T06:00:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+WARNING: Only 0/8 containers running. Starting...
+unable to get image 'infrastructure-rsi-010-john-a-4': Cannot connect to the Docker daemon at unix:///Users/miguelitodeguzman/.orbstack/run/docker.sock. Is the docker daemon running?
+⏳ Warming up model (timeout: 120s)...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2, timeout: 600s)...
+  ❌ FAILED (exit code 1, 1s, 128 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+
+=== All 8 subjects processed ===
+Completed: 0 | Failed: 8
+Time: 2026-03-03T06:00:17+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+=== RSI-010 Session: hourly ===
+Time: 2026-03-03T06:45:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+WARNING: Only 0/8 containers running. Starting...
+unable to get image 'infrastructure-rsi-010-john-a-4': Cannot connect to the Docker daemon at unix:///Users/miguelitodeguzman/.orbstack/run/docker.sock. Is the docker daemon running?
+⏳ Warming up model (timeout: 120s)...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+
+=== All 8 subjects processed ===
+Completed: 0 | Failed: 8
+Time: 2026-03-03T06:45:17+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+=== RSI-010 Session: hourly ===
+Time: 2026-03-03T07:00:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+WARNING: Only 0/8 containers running. Starting...
+unable to get image 'infrastructure-rsi-010-john-b-2': Cannot connect to the Docker daemon at unix:///Users/miguelitodeguzman/.orbstack/run/docker.sock. Is the docker daemon running?
+⏳ Warming up model (timeout: 120s)...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+
+=== All 8 subjects processed ===
+Completed: 0 | Failed: 8
+Time: 2026-03-03T07:00:17+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+=== RSI-010 Session: hourly ===
+Time: 2026-03-03T07:45:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+WARNING: Only 0/8 containers running. Starting...
+unable to get image 'infrastructure-rsi-010-john-b-3': Cannot connect to the Docker daemon at unix:///Users/miguelitodeguzman/.orbstack/run/docker.sock. Is the docker daemon running?
+⏳ Warming up model (timeout: 120s)...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1, timeout: 600s)...
+  ❌ FAILED (exit code 1, 1s, 128 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+
+=== All 8 subjects processed ===
+Completed: 0 | Failed: 8
+Time: 2026-03-03T07:45:17+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+=== RSI-010 Session: hourly ===
+Time: 2026-03-03T08:01:59+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+WARNING: Only 0/8 containers running. Starting...
+unable to get image 'infrastructure-rsi-010-john-b-1': Cannot connect to the Docker daemon at unix:///Users/miguelitodeguzman/.orbstack/run/docker.sock. Is the docker daemon running?
+⏳ Warming up model (timeout: 120s)...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2, timeout: 600s)...
+  ❌ FAILED (exit code 1, 1s, 128 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+
+=== All 8 subjects processed ===
+Completed: 0 | Failed: 8
+Time: 2026-03-03T08:02:45+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+=== RSI-010 Session: hourly ===
+Time: 2026-03-03T08:47:52+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+WARNING: Only 0/8 containers running. Starting...
+unable to get image 'infrastructure-rsi-010-john-b-3': Cannot connect to the Docker daemon at unix:///Users/miguelitodeguzman/.orbstack/run/docker.sock. Is the docker daemon running?
+⏳ Warming up model (timeout: 120s)...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+
+=== All 8 subjects processed ===
+Completed: 0 | Failed: 8
+Time: 2026-03-03T08:47:58+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+=== RSI-010 Session: hourly ===
+Time: 2026-03-03T09:00:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+WARNING: Only 0/8 containers running. Starting...
+unable to get image 'infrastructure-rsi-010-john-a-2': Cannot connect to the Docker daemon at unix:///Users/miguelitodeguzman/.orbstack/run/docker.sock. Is the docker daemon running?
+⏳ Warming up model (timeout: 120s)...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2, timeout: 600s)...
+  ❌ FAILED (exit code 1, 1s, 128 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+
+=== All 8 subjects processed ===
+Completed: 0 | Failed: 8
+Time: 2026-03-03T09:00:17+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+=== RSI-010 Session: hourly ===
+Time: 2026-03-03T09:45:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+WARNING: Only 0/8 containers running. Starting...
+unable to get image 'infrastructure-rsi-010-john-a-3': Cannot connect to the Docker daemon at unix:///Users/miguelitodeguzman/.orbstack/run/docker.sock. Is the docker daemon running?
+⏳ Warming up model (timeout: 120s)...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+
+=== All 8 subjects processed ===
+Completed: 0 | Failed: 8
+Time: 2026-03-03T09:45:17+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+=== RSI-010 Session: hourly ===
+Time: 2026-03-03T10:00:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+WARNING: Only 0/8 containers running. Starting...
+unable to get image 'infrastructure-rsi-010-john-b-4': Cannot connect to the Docker daemon at unix:///Users/miguelitodeguzman/.orbstack/run/docker.sock. Is the docker daemon running?
+⏳ Warming up model (timeout: 120s)...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 128 bytes)
+
+=== All 8 subjects processed ===
+Completed: 0 | Failed: 8
+Time: 2026-03-03T10:00:17+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+=== RSI-010 Session: hourly ===
+Time: 2026-03-03T10:45:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model (timeout: 120s)...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1, timeout: 600s)...
+  ✅ Done in 600s (0 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1, timeout: 600s)...
+2026-03-03T11:00:00+0400 SKIPPED: Previous run (PID 97926) still active
+  ✅ Done in 600s (0 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2, timeout: 600s)...
+  ✅ Done in 600s (0 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2, timeout: 600s)...
+  ✅ Done in 600s (0 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3, timeout: 600s)...
+  ✅ Done in 601s (0 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3, timeout: 600s)...
+  ✅ Done in 473s (13772 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4, timeout: 600s)...
+2026-03-03T11:45:01+0400 SKIPPED: Previous run (PID 97926) still active
+  ✅ Done in 140s (10209 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4, timeout: 600s)...
+  ✅ Done in 424s (30179 bytes)
+
+=== All 8 subjects processed ===
+Completed: 8 | Failed: 0
+Time: 2026-03-03T11:52:30+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+=== RSI-010 Session: hourly ===
+Time: 2026-03-03T12:00:01+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model (timeout: 120s)...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1, timeout: 600s)...
+  ✅ Done in 246s (22329 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1, timeout: 600s)...
+  ✅ Done in 569s (21904 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2, timeout: 600s)...
+  ✅ Done in 278s (16900 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2, timeout: 600s)...
+  ✅ Done in 600s (0 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3, timeout: 600s)...
+  ✅ Done in 464s (27656 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3, timeout: 600s)...
+  ✅ Done in 272s (18255 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4, timeout: 600s)...
+2026-03-03T12:45:00+0400 SKIPPED: Previous run (PID 20508) still active
+  ✅ Done in 601s (0 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4, timeout: 600s)...
+2026-03-03T13:00:00+0400 SKIPPED: Previous run (PID 20508) still active
+  ✅ Done in 600s (0 bytes)
+
+=== All 8 subjects processed ===
+Completed: 8 | Failed: 0
+Time: 2026-03-03T13:00:42+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+=== RSI-010 Session: hourly ===
+Time: 2026-03-03T13:45:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model (timeout: 120s)...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1, timeout: 600s)...
+  ✅ Done in 317s (26490 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1, timeout: 600s)...
+2026-03-03T14:00:00+0400 SKIPPED: Previous run (PID 53155) still active
+  ✅ Done in 600s (0 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2, timeout: 600s)...
+  ✅ Done in 331s (19119 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2, timeout: 600s)...
+  ✅ Done in 224s (15239 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3, timeout: 600s)...
+  ✅ Done in 102s (9527 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3, timeout: 600s)...
+  ✅ Done in 128s (18466 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4, timeout: 600s)...
+  ✅ Done in 222s (10285 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4, timeout: 600s)...
+  ✅ Done in 173s (17348 bytes)
+
+=== All 8 subjects processed ===
+Completed: 8 | Failed: 0
+Time: 2026-03-03T14:20:08+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+=== RSI-010 Session: hourly ===
+Time: 2026-03-03T14:45:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model (timeout: 120s)...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1, timeout: 600s)...
+  ✅ Done in 268s (17511 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1, timeout: 600s)...
+  ✅ Done in 185s (19081 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2, timeout: 600s)...
+  ✅ Done in 283s (24400 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2, timeout: 600s)...
+2026-03-03T15:00:00+0400 SKIPPED: Previous run (PID 75602) still active
+  ✅ Done in 280s (9023 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3, timeout: 600s)...
+  ✅ Done in 277s (30507 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3, timeout: 600s)...
+  ✅ Done in 526s (22494 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4, timeout: 600s)...
+  ✅ Done in 309s (9819 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4, timeout: 600s)...
+  ✅ Done in 157s (13782 bytes)
+
+=== All 8 subjects processed ===
+Completed: 8 | Failed: 0
+Time: 2026-03-03T15:23:17+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+=== RSI-010 Session: hourly ===
+Time: 2026-03-03T15:45:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model (timeout: 120s)...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1, timeout: 600s)...
+  ✅ Done in 208s (13280 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1, timeout: 600s)...
+  ✅ Done in 140s (33601 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2, timeout: 600s)...
+  ✅ Done in 319s (25898 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2, timeout: 600s)...
+2026-03-03T16:00:00+0400 SKIPPED: Previous run (PID 4237) still active
+  ✅ Done in 238s (16075 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3, timeout: 600s)...
+  ✅ Done in 346s (21581 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3, timeout: 600s)...
+  ✅ Done in 600s (0 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4, timeout: 600s)...
+  ✅ Done in 596s (14274 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4, timeout: 600s)...
+  ✅ Done in 210s (32281 bytes)
+
+=== All 8 subjects processed ===
+Completed: 8 | Failed: 0
+Time: 2026-03-03T16:29:28+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+=== RSI-010 Session: hourly ===
+Time: 2026-03-03T16:45:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model (timeout: 120s)...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1, timeout: 600s)...
+  ✅ Done in 175s (24219 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1, timeout: 600s)...
+  ✅ Done in 600s (0 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2, timeout: 600s)...
+2026-03-03T17:00:00+0400 SKIPPED: Previous run (PID 27881) still active
+  ✅ Done in 3980s (0 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2, timeout: 600s)...
+  ✅ Done in 600s (0 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3, timeout: 600s)...
+  ✅ Done in 600s (0 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3, timeout: 600s)...
+  ✅ Done in 601s (0 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4, timeout: 600s)...
+  ✅ Done in 316s (6056 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4, timeout: 600s)...
+2026-03-03T18:45:00+0400 SKIPPED: Previous run (PID 27881) still active
+  ✅ Done in 600s (0 bytes)
+
+=== All 8 subjects processed ===
+Completed: 8 | Failed: 0
+Time: 2026-03-03T18:49:44+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+=== RSI-010 Session: hourly ===
+Time: 2026-03-03T19:00:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model (timeout: 120s)...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1, timeout: 600s)...
+  ✅ Done in 131s (5715 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1, timeout: 600s)...
+  ✅ Done in 494s (30702 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2, timeout: 600s)...
+  ✅ Done in 222s (18125 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2, timeout: 600s)...
+  ✅ Done in 207s (33296 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3, timeout: 600s)...
+  ✅ Done in 240s (21430 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3, timeout: 600s)...
+  ✅ Done in 600s (0 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4, timeout: 600s)...
+  ✅ Done in 394s (9908 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4, timeout: 600s)...
+  ✅ Done in 293s (21154 bytes)
+
+=== All 8 subjects processed ===
+Completed: 8 | Failed: 0
+Time: 2026-03-03T19:43:03+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+=== RSI-010 Session: hourly ===
+Time: 2026-03-03T19:45:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model (timeout: 120s)...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1, timeout: 600s)...
+  ✅ Done in 192s (8605 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1, timeout: 600s)...
+  ✅ Done in 206s (16278 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2, timeout: 600s)...
+  ✅ Done in 435s (18643 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2, timeout: 600s)...
+2026-03-03T20:00:00+0400 SKIPPED: Previous run (PID 68337) still active
+  ✅ Done in 216s (21464 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3, timeout: 600s)...
+  ✅ Done in 601s (0 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3, timeout: 600s)...
+  ✅ Done in 600s (0 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4, timeout: 600s)...
+  ✅ Done in 600s (0 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4, timeout: 600s)...
+  ✅ Done in 600s (0 bytes)
+
+=== All 8 subjects processed ===
+Completed: 8 | Failed: 0
+Time: 2026-03-03T20:42:31+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+=== RSI-010 Session: hourly ===
+Time: 2026-03-03T20:45:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model (timeout: 120s)...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1, timeout: 600s)...
+  ✅ Done in 600s (0 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1, timeout: 600s)...
+2026-03-03T21:00:00+0400 SKIPPED: Previous run (PID 87989) still active
+  ✅ Done in 600s (0 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2, timeout: 600s)...
+  ✅ Done in 600s (0 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2, timeout: 600s)...
+  ✅ Done in 499s (3809 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3, timeout: 600s)...
+  ✅ Done in 98s (8532 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3, timeout: 600s)...
+  ✅ Done in 258s (19521 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4, timeout: 600s)...
+  ✅ Done in 269s (13873 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4, timeout: 600s)...
+  ✅ Done in 217s (26570 bytes)
+
+=== All 8 subjects processed ===
+Completed: 8 | Failed: 0
+Time: 2026-03-03T21:38:34+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+=== RSI-010 Session: hourly ===
+Time: 2026-03-03T21:45:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model (timeout: 120s)...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1, timeout: 600s)...
+  ✅ Done in 601s (0 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1, timeout: 600s)...
+2026-03-03T22:00:00+0400 SKIPPED: Previous run (PID 12471) still active
+  ✅ Done in 600s (0 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2, timeout: 600s)...
+  ✅ Done in 600s (0 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2, timeout: 600s)...
+  ✅ Done in 600s (0 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3, timeout: 600s)...
+  ✅ Done in 462s (7909 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3, timeout: 600s)...
+  ✅ Done in 489s (25237 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4, timeout: 600s)...
+  ✅ Done in 120s (8173 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4, timeout: 600s)...
+2026-03-03T22:45:00+0400 SKIPPED: Previous run (PID 12471) still active
+  ✅ Done in 274s (29743 bytes)
+
+=== All 8 subjects processed ===
+Completed: 8 | Failed: 0
+Time: 2026-03-03T22:47:37+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+=== RSI-010 Session: hourly ===
+Time: 2026-03-03T23:00:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model (timeout: 120s)...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1, timeout: 600s)...
+  ✅ Done in 180s (16628 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1, timeout: 600s)...
+  ✅ Done in 541s (24719 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2, timeout: 600s)...
+  ✅ Done in 200s (15633 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2, timeout: 600s)...
+  ✅ Done in 600s (0 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3, timeout: 600s)...
+  ✅ Done in 207s (16112 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3, timeout: 600s)...
+  ✅ Done in 333s (22436 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4, timeout: 600s)...
+  ✅ Done in 205s (13271 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4, timeout: 600s)...
+  ✅ Done in 160s (16751 bytes)
+
+=== All 8 subjects processed ===
+Completed: 8 | Failed: 0
+Time: 2026-03-03T23:40:38+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+=== RSI-010 Session: hourly ===
+Time: 2026-03-03T23:45:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model (timeout: 120s)...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1, timeout: 600s)...
+  ✅ Done in 282s (15803 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1, timeout: 600s)...
+  ✅ Done in 542s (26076 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2, timeout: 600s)...
+2026-03-04T00:00:00+0400 SKIPPED: Previous run (PID 57497) still active
+  ✅ Done in 198s (19365 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2, timeout: 600s)...
+  ✅ Done in 253s (21299 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3, timeout: 600s)...
+  ✅ Done in 58s (7537 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3, timeout: 600s)...
+  ✅ Done in 600s (0 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4, timeout: 600s)...
+  ✅ Done in 600s (0 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4, timeout: 600s)...
+  ✅ Done in 293s (10247 bytes)
+
+=== All 8 subjects processed ===
+Completed: 8 | Failed: 0
+Time: 2026-03-04T00:32:07+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+=== RSI-010 Session: hourly ===
+Time: 2026-03-04T00:45:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model (timeout: 120s)...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1, timeout: 600s)...
+  ✅ Done in 595s (37458 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1, timeout: 600s)...
+2026-03-04T01:00:00+0400 SKIPPED: Previous run (PID 77274) still active
+  ✅ Done in 600s (0 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2, timeout: 600s)...
+  ✅ Done in 219s (16207 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2, timeout: 600s)...
+  ✅ Done in 224s (6346 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3, timeout: 600s)...
+  ✅ Done in 56s (6864 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3, timeout: 600s)...
+  ✅ Done in 577s (23384 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4, timeout: 600s)...
+  ✅ Done in 247s (19625 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4, timeout: 600s)...
+  ✅ Done in 121s (21888 bytes)
+
+=== All 8 subjects processed ===
+Completed: 8 | Failed: 0
+Time: 2026-03-04T01:29:10+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+=== RSI-010 Session: hourly ===
+Time: 2026-03-04T01:45:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model (timeout: 120s)...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1, timeout: 600s)...
+  ✅ Done in 334s (24141 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1, timeout: 600s)...
+2026-03-04T02:00:00+0400 SKIPPED: Previous run (PID 94114) still active
+  ✅ Done in 600s (0 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2, timeout: 600s)...
+  ✅ Done in 600s (0 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2, timeout: 600s)...
+  ✅ Done in 600s (0 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3, timeout: 600s)...
+  ✅ Done in 425s (23849 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3, timeout: 600s)...
+  ✅ Done in 490s (26339 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4, timeout: 600s)...
+  ✅ Done in 123s (5717 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4, timeout: 600s)...
+  ✅ Done in 212s (27582 bytes)
+
+=== All 8 subjects processed ===
+Completed: 8 | Failed: 0
+Time: 2026-03-04T02:41:35+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+=== RSI-010 Session: hourly ===
+Time: 2026-03-04T02:45:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model (timeout: 120s)...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1, timeout: 600s)...
+  ✅ Done in 462s (21979 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1, timeout: 600s)...
+  ✅ Done in 229s (16950 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2, timeout: 600s)...
+2026-03-04T03:00:00+0400 SKIPPED: Previous run (PID 11130) still active
+  ✅ Done in 254s (24910 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2, timeout: 600s)...
+  ✅ Done in 499s (19503 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3, timeout: 600s)...
+  ✅ Done in 287s (16557 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3, timeout: 600s)...
+  ✅ Done in 202s (17453 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4, timeout: 600s)...
+  ✅ Done in 200s (18815 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4, timeout: 600s)...
+  ✅ Done in 167s (16507 bytes)
+
+=== All 8 subjects processed ===
+Completed: 8 | Failed: 0
+Time: 2026-03-04T03:23:21+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+=== RSI-010 Session: hourly ===
+Time: 2026-03-04T03:45:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model (timeout: 120s)...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1, timeout: 600s)...
+  ✅ Done in 600s (0 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1, timeout: 600s)...
+2026-03-04T04:00:01+0400 SKIPPED: Previous run (PID 27886) still active
+  ✅ Done in 600s (0 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2, timeout: 600s)...
+  ✅ Done in 600s (0 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2, timeout: 600s)...
+  ✅ Done in 601s (0 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3, timeout: 600s)...
+  ✅ Done in 600s (0 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3, timeout: 600s)...
+2026-03-04T04:45:00+0400 SKIPPED: Previous run (PID 27886) still active
+  ✅ Done in 600s (0 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4, timeout: 600s)...
+  ✅ Done in 600s (0 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4, timeout: 600s)...
+2026-03-04T05:00:01+0400 SKIPPED: Previous run (PID 27886) still active
+  ✅ Done in 600s (0 bytes)
+
+=== All 8 subjects processed ===
+Completed: 8 | Failed: 0
+Time: 2026-03-04T05:05:13+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+=== RSI-010 Session: hourly ===
+Time: 2026-03-04T05:45:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model (timeout: 120s)...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1, timeout: 600s)...
+  ✅ Done in 129s (5715 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1, timeout: 600s)...
+  ✅ Done in 498s (28645 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2, timeout: 600s)...
+2026-03-04T06:00:00+0400 SKIPPED: Previous run (PID 61369) still active
+  ✅ Done in 367s (21685 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2, timeout: 600s)...
+  ✅ Done in 292s (25090 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3, timeout: 600s)...
+  ✅ Done in 252s (17402 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3, timeout: 600s)...
+  ✅ Done in 367s (26348 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4, timeout: 600s)...
+  ✅ Done in 224s (18420 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4, timeout: 600s)...
+  ✅ Done in 313s (30493 bytes)
+
+=== All 8 subjects processed ===
+Completed: 8 | Failed: 0
+Time: 2026-03-04T06:26:03+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+=== RSI-010 Session: hourly ===
+Time: 2026-03-04T06:45:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model (timeout: 120s)...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1, timeout: 600s)...
+  ✅ Done in 413s (14479 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1, timeout: 600s)...
+2026-03-04T07:00:00+0400 SKIPPED: Previous run (PID 80352) still active
+  ✅ Done in 601s (0 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2, timeout: 600s)...
+  ✅ Done in 600s (0 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2, timeout: 600s)...
+  ✅ Done in 600s (0 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3, timeout: 600s)...
+  ✅ Done in 376s (3767 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3, timeout: 600s)...
+  ✅ Done in 600s (0 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4, timeout: 600s)...
+2026-03-04T07:45:00+0400 SKIPPED: Previous run (PID 80352) still active
+  ✅ Done in 600s (0 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4, timeout: 600s)...
+  ✅ Done in 3561s (0 bytes)
+
+=== All 8 subjects processed ===
+Completed: 8 | Failed: 0
+Time: 2026-03-04T08:47:44+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+=== RSI-010 Session: hourly ===
+Time: 2026-03-04T09:00:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model (timeout: 120s)...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1, timeout: 600s)...
+  ✅ Done in 513s (7119 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1, timeout: 600s)...
+  ✅ Done in 600s (0 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2, timeout: 600s)...
+  ✅ Done in 600s (0 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2, timeout: 600s)...
+  ✅ Done in 600s (0 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3, timeout: 600s)...
+2026-03-04T09:45:01+0400 SKIPPED: Previous run (PID 2478) still active
+  ✅ Done in 600s (0 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3, timeout: 600s)...
+  ✅ Done in 600s (0 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4, timeout: 600s)...
+2026-03-04T10:00:00+0400 SKIPPED: Previous run (PID 2478) still active
+  ✅ Done in 600s (0 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4, timeout: 600s)...
+  ✅ Done in 600s (0 bytes)
+
+=== All 8 subjects processed ===
+Completed: 8 | Failed: 0
+Time: 2026-03-04T10:19:39+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+=== RSI-010 Session: hourly ===
+Time: 2026-03-04T10:45:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model (timeout: 120s)...
+ERROR: Model warmup failed or timed out after 120s
+Response: 
+=== RSI-010 Session: hourly ===
+Time: 2026-03-04T11:00:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model (timeout: 120s)...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1, timeout: 600s)...
+  ✅ Done in 147s (5715 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1, timeout: 600s)...
+  ✅ Done in 534s (22523 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2, timeout: 600s)...
+  ✅ Done in 322s (26488 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2, timeout: 600s)...
+  ✅ Done in 125s (5745 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3, timeout: 600s)...
+  ✅ Done in 170s (17591 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3, timeout: 600s)...
+  ✅ Done in 442s (17938 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4, timeout: 600s)...
+  ✅ Done in 356s (12895 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4, timeout: 600s)...
+  ✅ Done in 262s (24355 bytes)
+
+=== All 8 subjects processed ===
+Completed: 8 | Failed: 0
+Time: 2026-03-04T11:39:30+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+=== RSI-010 Session: hourly ===
+Time: 2026-03-04T11:45:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model (timeout: 120s)...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1, timeout: 600s)...
+  ✅ Done in 128s (5715 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1, timeout: 600s)...
+  ✅ Done in 418s (22320 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2, timeout: 600s)...
+  ✅ Done in 171s (14545 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2, timeout: 600s)...
+2026-03-04T12:00:00+0400 SKIPPED: Previous run (PID 72816) still active
+  ✅ Done in 280s (19239 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3, timeout: 600s)...
+  ✅ Done in 318s (27052 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3, timeout: 600s)...
+  ✅ Done in 493s (27153 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4, timeout: 600s)...
+  ✅ Done in 326s (21595 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4, timeout: 600s)...
+  ✅ Done in 299s (24710 bytes)
+
+=== All 8 subjects processed ===
+Completed: 8 | Failed: 0
+Time: 2026-03-04T12:25:45+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+=== RSI-010 Session: hourly ===
+Time: 2026-03-04T12:45:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model (timeout: 120s)...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1, timeout: 600s)...
+  ✅ Done in 187s (7626 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1, timeout: 600s)...
+  ✅ Done in 173s (33747 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2, timeout: 600s)...
+  ✅ Done in 436s (18361 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2, timeout: 600s)...
+2026-03-04T13:00:00+0400 SKIPPED: Previous run (PID 93935) still active
+  ✅ Done in 487s (23199 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3, timeout: 600s)...
+  ✅ Done in 458s (33348 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3, timeout: 600s)...
+  ✅ Done in 513s (26625 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4, timeout: 600s)...
+  ✅ Done in 388s (26934 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4, timeout: 600s)...
+  ✅ Done in 199s (17543 bytes)
+
+=== All 8 subjects processed ===
+Completed: 8 | Failed: 0
+Time: 2026-03-04T13:32:32+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+=== RSI-010 Session: hourly ===
+Time: 2026-03-04T13:45:01+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model (timeout: 120s)...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1, timeout: 600s)...
+  ✅ Done in 223s (22247 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1, timeout: 600s)...
+  ✅ Done in 429s (24109 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2, timeout: 600s)...
+2026-03-04T14:00:00+0400 SKIPPED: Previous run (PID 16296) still active
+  ✅ Done in 600s (0 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2, timeout: 600s)...
+  ✅ Done in 506s (17488 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3, timeout: 600s)...
+  ✅ Done in 93s (8328 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3, timeout: 600s)...
+  ✅ Done in 224s (24682 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4, timeout: 600s)...
+  ✅ Done in 140s (6572 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4, timeout: 600s)...
+  ✅ Done in 253s (22567 bytes)
+
+=== All 8 subjects processed ===
+Completed: 8 | Failed: 0
+Time: 2026-03-04T14:26:20+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+=== RSI-010 Session: hourly ===
+Time: 2026-03-04T14:45:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model (timeout: 120s)...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1, timeout: 600s)...
+  ✅ Done in 213s (20131 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1, timeout: 600s)...
+  ✅ Done in 600s (0 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2, timeout: 600s)...
+2026-03-04T15:00:00+0400 SKIPPED: Previous run (PID 36414) still active
+  ✅ Done in 600s (0 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2, timeout: 600s)...
+  ✅ Done in 600s (0 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3, timeout: 600s)...
+  ✅ Done in 600s (0 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3, timeout: 600s)...
+  ✅ Done in 425s (21654 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4, timeout: 600s)...
+  ✅ Done in 435s (26042 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4, timeout: 600s)...
+2026-03-04T15:45:00+0400 SKIPPED: Previous run (PID 36414) still active
+  ✅ Done in 405s (21903 bytes)
+
+=== All 8 subjects processed ===
+Completed: 8 | Failed: 0
+Time: 2026-03-04T15:49:51+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+=== RSI-010 Session: hourly ===
+Time: 2026-03-04T16:00:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model (timeout: 120s)...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1, timeout: 600s)...
+  ✅ Done in 203s (16027 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1, timeout: 600s)...
+  ✅ Done in 536s (21620 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2, timeout: 600s)...
+  ✅ Done in 438s (27547 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2, timeout: 600s)...
+  ✅ Done in 187s (15544 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3, timeout: 600s)...
+  ✅ Done in 115s (11584 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3, timeout: 600s)...
+  ✅ Done in 312s (21160 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4, timeout: 600s)...
+  ✅ Done in 423s (21331 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4, timeout: 600s)...
+  ✅ Done in 114s (17205 bytes)
+
+=== All 8 subjects processed ===
+Completed: 8 | Failed: 0
+Time: 2026-03-04T16:39:00+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+=== RSI-010 Session: hourly ===
+Time: 2026-03-04T16:45:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model (timeout: 120s)...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1, timeout: 600s)...
+  ✅ Done in 202s (12682 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1, timeout: 600s)...
+  ✅ Done in 262s (19458 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2, timeout: 600s)...
+  ✅ Done in 206s (18230 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2, timeout: 600s)...
+2026-03-04T17:00:00+0400 SKIPPED: Previous run (PID 88529) still active
+  ✅ Done in 3633s (0 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3, timeout: 600s)...
+  ✅ Done in 5662s (12112 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3, timeout: 600s)...
+  ✅ Done in 441s (28119 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4, timeout: 600s)...
+  ✅ Done in 352s (23596 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4, timeout: 600s)...
+2026-03-04T19:45:00+0400 SKIPPED: Previous run (PID 88529) still active
+  ✅ Done in 317s (21583 bytes)
+
+=== All 8 subjects processed ===
+Completed: 8 | Failed: 0
+Time: 2026-03-04T19:49:48+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+=== RSI-010 Session: hourly ===
+Time: 2026-03-04T20:00:01+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model (timeout: 120s)...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1, timeout: 600s)...
+  ✅ Done in 211s (15294 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1, timeout: 600s)...
+  ✅ Done in 370s (22427 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2, timeout: 600s)...
+  ✅ Done in 600s (0 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2, timeout: 600s)...
+  ✅ Done in 277s (5717 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3, timeout: 600s)...
+  ✅ Done in 448s (24492 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3, timeout: 600s)...
+  ✅ Done in 252s (22169 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4, timeout: 600s)...
+  ✅ Done in 270s (16987 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4, timeout: 600s)...
+2026-03-04T20:45:00+0400 SKIPPED: Previous run (PID 8386) still active
+  ✅ Done in 272s (29344 bytes)
+
+=== All 8 subjects processed ===
+Completed: 8 | Failed: 0
+Time: 2026-03-04T20:45:15+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+=== RSI-010 Session: hourly ===
+Time: 2026-03-04T21:00:01+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model (timeout: 120s)...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1, timeout: 600s)...
+  ✅ Done in 343s (22271 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1, timeout: 600s)...
+  ✅ Done in 600s (0 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2, timeout: 600s)...
+  ✅ Done in 601s (0 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2, timeout: 600s)...
+  ✅ Done in 600s (0 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3, timeout: 600s)...
+2026-03-04T21:45:00+0400 SKIPPED: Previous run (PID 26986) still active
+  ✅ Done in 600s (0 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3, timeout: 600s)...
+  ✅ Done in 441s (3781 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4, timeout: 600s)...
+  ✅ Done in 396s (10012 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4, timeout: 600s)...
+2026-03-04T22:00:00+0400 SKIPPED: Previous run (PID 26986) still active
+  ✅ Done in 191s (18805 bytes)
+
+=== All 8 subjects processed ===
+Completed: 8 | Failed: 0
+Time: 2026-03-04T22:03:05+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+=== RSI-010 Session: hourly ===
+Time: 2026-03-04T22:45:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model (timeout: 120s)...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1, timeout: 600s)...
+  ✅ Done in 600s (0 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1, timeout: 600s)...
+2026-03-04T23:00:00+0400 SKIPPED: Previous run (PID 57534) still active
+  ✅ Done in 459s (30353 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2, timeout: 600s)...
+  ✅ Done in 228s (21196 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2, timeout: 600s)...
+  ✅ Done in 187s (15002 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3, timeout: 600s)...
+  ✅ Done in 150s (13764 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3, timeout: 600s)...
+  ✅ Done in 189s (14007 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4, timeout: 600s)...
+  ✅ Done in 189s (7839 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4, timeout: 600s)...
+  ✅ Done in 182s (16066 bytes)
+
+=== All 8 subjects processed ===
+Completed: 8 | Failed: 0
+Time: 2026-03-04T23:21:37+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+=== RSI-010 Session: hourly ===
+Time: 2026-03-04T23:45:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model (timeout: 120s)...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1, timeout: 600s)...
+  ✅ Done in 239s (15730 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1, timeout: 600s)...
+  ✅ Done in 178s (12782 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2, timeout: 600s)...
+2026-03-05T00:00:01+0400 SKIPPED: Previous run (PID 73933) still active
+  ✅ Done in 505s (26792 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2, timeout: 600s)...
+  ✅ Done in 310s (19828 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3, timeout: 600s)...
+  ✅ Done in 211s (17115 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3, timeout: 600s)...
+  ✅ Done in 297s (15079 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4, timeout: 600s)...
+  ✅ Done in 262s (11517 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4, timeout: 600s)...
+  ✅ Done in 164s (14585 bytes)
+
+=== All 8 subjects processed ===
+Completed: 8 | Failed: 0
+Time: 2026-03-05T00:21:26+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+=== RSI-010 Session: hourly ===
+Time: 2026-03-05T00:45:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model (timeout: 120s)...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1, timeout: 600s)...
+  ✅ Done in 286s (23549 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1, timeout: 600s)...
+  ✅ Done in 133s (28057 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2, timeout: 600s)...
+  ✅ Done in 208s (11541 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2, timeout: 600s)...
+2026-03-05T01:00:01+0400 SKIPPED: Previous run (PID 90293) still active
+  ✅ Done in 530s (14910 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3, timeout: 600s)...
+  ✅ Done in 124s (11573 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3, timeout: 600s)...
+  ✅ Done in 118s (27463 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4, timeout: 600s)...
+  ✅ Done in 110s (21779 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4, timeout: 600s)...
+  ✅ Done in 309s (13083 bytes)
+
+=== All 8 subjects processed ===
+Completed: 8 | Failed: 0
+Time: 2026-03-05T01:15:31+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+=== RSI-010 Session: hourly ===
+Time: 2026-03-05T01:45:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model (timeout: 120s)...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1, timeout: 600s)...
+  ✅ Done in 249s (24781 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1, timeout: 600s)...
+  ✅ Done in 600s (0 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2, timeout: 600s)...
+2026-03-05T02:00:01+0400 SKIPPED: Previous run (PID 6991) still active
+  ✅ Done in 600s (0 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2, timeout: 600s)...
+  ✅ Done in 600s (0 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3, timeout: 600s)...
+  ✅ Done in 600s (0 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3, timeout: 600s)...
+  ✅ Done in 601s (0 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4, timeout: 600s)...
+2026-03-05T02:45:00+0400 SKIPPED: Previous run (PID 6991) still active
+  ✅ Done in 600s (0 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4, timeout: 600s)...
+  ✅ Done in 600s (0 bytes)
+
+=== All 8 subjects processed ===
+Completed: 8 | Failed: 0
+Time: 2026-03-05T02:59:22+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+=== RSI-010 Session: hourly ===
+Time: 2026-03-05T03:00:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model (timeout: 120s)...
+ERROR: Model warmup failed or timed out after 120s
+Response: 
+=== RSI-010 Session: hourly ===
+Time: 2026-03-05T03:45:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model (timeout: 120s)...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1, timeout: 600s)...
+  ✅ Done in 140s (25225 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1, timeout: 600s)...
+  ✅ Done in 306s (24271 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2, timeout: 600s)...
+  ✅ Done in 372s (21829 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2, timeout: 600s)...
+2026-03-05T04:00:00+0400 SKIPPED: Previous run (PID 39585) still active
+  ✅ Done in 358s (17048 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3, timeout: 600s)...
+  ✅ Done in 372s (31034 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3, timeout: 600s)...
+  ✅ Done in 296s (18383 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4, timeout: 600s)...
+  ✅ Done in 257s (17876 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4, timeout: 600s)...
+  ✅ Done in 425s (20650 bytes)
+
+=== All 8 subjects processed ===
+Completed: 8 | Failed: 0
+Time: 2026-03-05T04:27:17+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+=== RSI-010 Session: hourly ===
+Time: 2026-03-05T04:45:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model (timeout: 120s)...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1, timeout: 600s)...
+  ✅ Done in 390s (24065 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1, timeout: 600s)...
+  ✅ Done in 236s (20034 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2, timeout: 600s)...
+2026-03-05T05:00:00+0400 SKIPPED: Previous run (PID 56149) still active
+  ✅ Done in 331s (16231 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2, timeout: 600s)...
+  ✅ Done in 197s (11870 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3, timeout: 600s)...
+  ✅ Done in 209s (24339 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3, timeout: 600s)...
+  ✅ Done in 510s (23486 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4, timeout: 600s)...
+  ✅ Done in 338s (19894 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4, timeout: 600s)...
+  ✅ Done in 198s (22680 bytes)
+
+=== All 8 subjects processed ===
+Completed: 8 | Failed: 0
+Time: 2026-03-05T05:25:21+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+=== RSI-010 Session: hourly ===
+Time: 2026-03-05T05:45:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model (timeout: 120s)...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1, timeout: 600s)...
+  ✅ Done in 131s (5715 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1, timeout: 600s)...
+  ✅ Done in 311s (20092 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2, timeout: 600s)...
+  ✅ Done in 209s (16152 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2, timeout: 600s)...
+2026-03-05T06:00:00+0400 SKIPPED: Previous run (PID 72498) still active
+  ✅ Done in 247s (14108 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3, timeout: 600s)...
+  ✅ Done in 185s (16546 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3, timeout: 600s)...
+  ✅ Done in 558s (27443 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4, timeout: 600s)...
+  ✅ Done in 461s (21701 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4, timeout: 600s)...
+  ✅ Done in 104s (20515 bytes)
+
+=== All 8 subjects processed ===
+Completed: 8 | Failed: 0
+Time: 2026-03-05T06:21:58+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+=== RSI-010 Session: hourly ===
+Time: 2026-03-05T06:45:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model (timeout: 120s)...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1, timeout: 600s)...
+  ✅ Done in 211s (19352 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1, timeout: 600s)...
+  ✅ Done in 271s (15542 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2, timeout: 600s)...
+  ✅ Done in 211s (13944 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2, timeout: 600s)...
+2026-03-05T07:00:01+0400 SKIPPED: Previous run (PID 88825) still active
+  ✅ Done in 513s (16570 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3, timeout: 600s)...
+  ✅ Done in 136s (20415 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3, timeout: 600s)...
+  ✅ Done in 428s (30287 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4, timeout: 600s)...
+  ✅ Done in 487s (24484 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4, timeout: 600s)...
+  ✅ Done in 480s (23998 bytes)
+
+=== All 8 subjects processed ===
+Completed: 8 | Failed: 0
+Time: 2026-03-05T07:30:49+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+=== RSI-010 Session: hourly ===
+Time: 2026-03-05T07:45:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model (timeout: 120s)...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1, timeout: 600s)...
+  ✅ Done in 214s (15189 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1, timeout: 600s)...
+  ✅ Done in 410s (32794 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2, timeout: 600s)...
+  ✅ Done in 3263s (21762 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2, timeout: 600s)...
+  ✅ Done in 499s (29584 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3, timeout: 600s)...
+2026-03-05T09:00:00+0400 SKIPPED: Previous run (PID 6316) still active
+  ✅ Done in 405s (27289 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3, timeout: 600s)...
+  ✅ Done in 357s (29936 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4, timeout: 600s)...
+  ✅ Done in 485s (16829 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4, timeout: 600s)...
+  ✅ Done in 389s (21857 bytes)
+
+=== All 8 subjects processed ===
+Completed: 8 | Failed: 0
+Time: 2026-03-05T09:25:33+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+=== RSI-010 Session: hourly ===
+Time: 2026-03-05T09:45:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model (timeout: 120s)...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1, timeout: 600s)...
+  ✅ Done in 133s (5715 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1, timeout: 600s)...
+  ✅ Done in 315s (16275 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2, timeout: 600s)...
+2026-03-05T10:00:01+0400 SKIPPED: Previous run (PID 30270) still active
+  ✅ Done in 444s (11383 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2, timeout: 600s)...
+  ✅ Done in 326s (14549 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3, timeout: 600s)...
+  ✅ Done in 476s (27047 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3, timeout: 600s)...
+  ✅ Done in 450s (28875 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4, timeout: 600s)...
+  ✅ Done in 162s (15072 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4, timeout: 600s)...
+  ✅ Done in 466s (22553 bytes)
+
+=== All 8 subjects processed ===
+Completed: 8 | Failed: 0
+Time: 2026-03-05T10:31:23+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+=== RSI-010 Session: hourly ===
+Time: 2026-03-05T10:45:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model (timeout: 120s)...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1, timeout: 600s)...
+  ✅ Done in 175s (11967 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1, timeout: 600s)...
+  ✅ Done in 236s (19140 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2, timeout: 600s)...
+  ✅ Done in 293s (10825 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2, timeout: 600s)...
+2026-03-05T11:00:00+0400 SKIPPED: Previous run (PID 50878) still active
+  ✅ Done in 367s (18748 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3, timeout: 600s)...
+  ✅ Done in 283s (22490 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3, timeout: 600s)...
+  ✅ Done in 315s (24670 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4, timeout: 600s)...
+  ✅ Done in 440s (21787 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4, timeout: 600s)...
+  ✅ Done in 163s (22790 bytes)
+
+=== All 8 subjects processed ===
+Completed: 8 | Failed: 0
+Time: 2026-03-05T11:23:04+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+=== RSI-010 Session: hourly ===
+Time: 2026-03-05T11:45:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model (timeout: 120s)...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1, timeout: 600s)...
+  ✅ Done in 573s (27092 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1, timeout: 600s)...
+2026-03-05T12:00:00+0400 SKIPPED: Previous run (PID 73436) still active
+  ✅ Done in 445s (26194 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2, timeout: 600s)...
+  ✅ Done in 232s (17501 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2, timeout: 600s)...
+  ✅ Done in 466s (16248 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3, timeout: 600s)...
+  ✅ Done in 273s (19370 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3, timeout: 600s)...
+  ✅ Done in 450s (27631 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4, timeout: 600s)...
+  ✅ Done in 564s (21164 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4, timeout: 600s)...
+  ✅ Done in 202s (17460 bytes)
+
+=== All 8 subjects processed ===
+Completed: 8 | Failed: 0
+Time: 2026-03-05T12:38:38+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+=== RSI-010 Session: hourly ===
+Time: 2026-03-05T12:45:01+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model (timeout: 120s)...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1, timeout: 600s)...
+  ✅ Done in 573s (26787 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1, timeout: 600s)...
+2026-03-05T13:00:00+0400 SKIPPED: Previous run (PID 94062) still active
+  ✅ Done in 349s (21295 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2, timeout: 600s)...
+  ✅ Done in 329s (24468 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2, timeout: 600s)...
+  ✅ Done in 438s (26396 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3, timeout: 600s)...
+  ✅ Done in 206s (10132 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3, timeout: 600s)...
+  ✅ Done in 380s (29863 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4, timeout: 600s)...
+  ✅ Done in 406s (25117 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4, timeout: 600s)...
+  ✅ Done in 165s (12350 bytes)
+
+=== All 8 subjects processed ===
+Completed: 8 | Failed: 0
+Time: 2026-03-05T13:32:39+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+=== RSI-010 Session: hourly ===
+Time: 2026-03-05T13:45:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model (timeout: 120s)...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1, timeout: 600s)...
+  ✅ Done in 185s (15308 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1, timeout: 600s)...
+  ✅ Done in 339s (19170 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2, timeout: 600s)...
+2026-03-05T14:00:00+0400 SKIPPED: Previous run (PID 9704) still active
+  ✅ Done in 487s (16072 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2, timeout: 600s)...
+  ✅ Done in 399s (20472 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3, timeout: 600s)...
+  ✅ Done in 343s (33010 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3, timeout: 600s)...
+  ✅ Done in 392s (26749 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4, timeout: 600s)...
+  ✅ Done in 457s (23854 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4, timeout: 600s)...
+  ✅ Done in 132s (19128 bytes)
+
+=== All 8 subjects processed ===
+Completed: 8 | Failed: 0
+Time: 2026-03-05T14:30:46+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+=== RSI-010 Session: hourly ===
+Time: 2026-03-05T14:45:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model (timeout: 120s)...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1, timeout: 600s)...
+  ✅ Done in 389s (19911 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1, timeout: 600s)...
+  ✅ Done in 198s (15257 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2, timeout: 600s)...
+2026-03-05T15:00:00+0400 SKIPPED: Previous run (PID 29313) still active
+  ✅ Done in 464s (19900 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2, timeout: 600s)...
+  ✅ Done in 399s (15031 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3, timeout: 600s)...
+  ✅ Done in 206s (19201 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3, timeout: 600s)...
+  ✅ Done in 230s (23542 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4, timeout: 600s)...
+  ✅ Done in 209s (14414 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4, timeout: 600s)...
+  ✅ Done in 456s (24214 bytes)
+
+=== All 8 subjects processed ===
+Completed: 8 | Failed: 0
+Time: 2026-03-05T15:27:42+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+=== RSI-010 Session: hourly ===
+Time: 2026-03-05T15:45:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model (timeout: 120s)...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1, timeout: 600s)...
+  ✅ Done in 527s (26501 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1, timeout: 600s)...
+  ✅ Done in 331s (30469 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2, timeout: 600s)...
+2026-03-05T16:00:00+0400 SKIPPED: Previous run (PID 45466) still active
+  ✅ Done in 186s (15452 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2, timeout: 600s)...
+  ✅ Done in 580s (28839 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3, timeout: 600s)...
+  ✅ Done in 370s (24921 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3, timeout: 600s)...
+  ✅ Done in 217s (13956 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4, timeout: 600s)...
+  ✅ Done in 175s (13584 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4, timeout: 600s)...
+  ✅ Done in 147s (22425 bytes)
+
+=== All 8 subjects processed ===
+Completed: 8 | Failed: 0
+Time: 2026-03-05T16:27:32+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+=== RSI-010 Session: hourly ===
+Time: 2026-03-05T16:45:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model (timeout: 120s)...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1, timeout: 600s)...
+  ✅ Done in 142s (5715 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1, timeout: 600s)...
+  ✅ Done in 455s (35020 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2, timeout: 600s)...
+2026-03-05T17:00:00+0400 SKIPPED: Previous run (PID 61667) still active
+  ✅ Done in 365s (25354 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2, timeout: 600s)...
+2026-03-05T18:00:28+0400 SKIPPED: Previous run (PID 61667) still active
+  ✅ Done in 3878s (0 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3, timeout: 600s)...
+  ✅ Done in 600s (0 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3, timeout: 600s)...
+  ✅ Done in 381s (25602 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4, timeout: 600s)...
+  ✅ Done in 291s (18414 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4, timeout: 600s)...
+  ✅ Done in 134s (19093 bytes)
+
+=== All 8 subjects processed ===
+Completed: 8 | Failed: 0
+Time: 2026-03-05T18:29:18+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+=== RSI-010 Session: hourly ===
+Time: 2026-03-05T18:45:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model (timeout: 120s)...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1, timeout: 600s)...
+  ✅ Done in 190s (35599 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1, timeout: 600s)...
+  ✅ Done in 302s (20226 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2, timeout: 600s)...
+  ✅ Done in 248s (26065 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2, timeout: 600s)...
+2026-03-05T19:00:00+0400 SKIPPED: Previous run (PID 82489) still active
+  ✅ Done in 259s (26086 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3, timeout: 600s)...
+  ✅ Done in 437s (31213 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3, timeout: 600s)...
+  ✅ Done in 206s (16820 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4, timeout: 600s)...
+  ✅ Done in 290s (15943 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4, timeout: 600s)...
+  ✅ Done in 337s (29084 bytes)
+
+=== All 8 subjects processed ===
+Completed: 8 | Failed: 0
+Time: 2026-03-05T19:23:01+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+=== RSI-010 Session: hourly ===
+Time: 2026-03-05T19:45:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model (timeout: 120s)...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1, timeout: 600s)...
+  ✅ Done in 240s (17730 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1, timeout: 600s)...
+  ✅ Done in 283s (18096 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2, timeout: 600s)...
+  ✅ Done in 176s (13237 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2, timeout: 600s)...
+2026-03-05T20:00:00+0400 SKIPPED: Previous run (PID 99608) still active
+  ✅ Done in 536s (16041 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3, timeout: 600s)...
+  ✅ Done in 403s (17167 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3, timeout: 600s)...
+  ✅ Done in 565s (24668 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4, timeout: 600s)...
+  ✅ Done in 121s (5723 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4, timeout: 600s)...
+  ✅ Done in 131s (29168 bytes)
+
+=== All 8 subjects processed ===
+Completed: 8 | Failed: 0
+Time: 2026-03-05T20:26:07+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+=== RSI-010 Session: hourly ===
+Time: 2026-03-05T20:45:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model (timeout: 120s)...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1, timeout: 600s)...
+  ✅ Done in 283s (20705 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1, timeout: 600s)...
+  ✅ Done in 196s (14991 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2, timeout: 600s)...
+  ✅ Done in 158s (8987 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2, timeout: 600s)...
+2026-03-05T21:00:00+0400 SKIPPED: Previous run (PID 14885) still active
+  ✅ Done in 523s (18237 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3, timeout: 600s)...
+  ✅ Done in 224s (14084 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3, timeout: 600s)...
+  ✅ Done in 409s (26117 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4, timeout: 600s)...
+  ✅ Done in 216s (19851 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4, timeout: 600s)...
+  ✅ Done in 178s (13067 bytes)
+
+=== All 8 subjects processed ===
+Completed: 8 | Failed: 0
+Time: 2026-03-05T21:21:38+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+=== RSI-010 Session: hourly ===
+Time: 2026-03-05T21:45:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model (timeout: 120s)...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1, timeout: 600s)...
+  ✅ Done in 293s (20716 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1, timeout: 600s)...
+  ✅ Done in 222s (21157 bytes)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2, timeout: 600s)...
+  ✅ Done in 277s (26965 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2, timeout: 600s)...
+2026-03-05T22:00:00+0400 SKIPPED: Previous run (PID 30941) still active
+  ✅ Done in 600s (0 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3, timeout: 600s)...
+  ✅ Done in 516s (24121 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3, timeout: 600s)...
+  ✅ Done in 600s (0 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4, timeout: 600s)...
+  ✅ Done in 183s (15757 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4, timeout: 600s)...
+  ✅ Done in 201s (15446 bytes)
+
+=== All 8 subjects processed ===
+Completed: 8 | Failed: 0
+Time: 2026-03-05T22:33:23+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data
+=== RSI-010 Session: hourly ===
+Time: 2026-03-05T22:45:00+0400
+Model: qwen3-coder-next (via Ollama → host.docker.internal)
+Isolation: Docker containers (OrbStack)
+Subjects: 8 (4 pairs, sequential)
+
+⏳ Warming up model (timeout: 120s)...
+✅ Model loaded
+
+▶ Running john-a-1 (container: lab-rsi010-john-a-1, timeout: 600s)...
+  ✅ Done in 216s (15369 bytes)
+▶ Running john-b-1 (container: lab-rsi010-john-b-1, timeout: 600s)...
+  ⏰ TIMEOUT after 600s (0 bytes captured)
+▶ Running john-a-2 (container: lab-rsi010-john-a-2, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 118 bytes)
+▶ Running john-b-2 (container: lab-rsi010-john-b-2, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 118 bytes)
+▶ Running john-a-3 (container: lab-rsi010-john-a-3, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 118 bytes)
+▶ Running john-b-3 (container: lab-rsi010-john-b-3, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 118 bytes)
+▶ Running john-a-4 (container: lab-rsi010-john-a-4, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 118 bytes)
+▶ Running john-b-4 (container: lab-rsi010-john-b-4, timeout: 600s)...
+  ❌ FAILED (exit code 1, 0s, 118 bytes)
+
+=== All 8 subjects processed ===
+Completed: 1 | Failed: 7
+Time: 2026-03-05T22:50:56+0400
+Logs: /Users/miguelitodeguzman/ailab/lab-protocol/experiments/rsi-010/data

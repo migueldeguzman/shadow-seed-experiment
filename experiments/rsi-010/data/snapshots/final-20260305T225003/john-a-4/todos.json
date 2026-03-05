@@ -1,0 +1,14 @@
+[
+  {
+    "text": "Take a walk",
+    "completed": false
+  },
+  {
+    "text": "Read a chapter of a book",
+    "completed": false
+  },
+  {
+    "text": "Write one paragraph of my journal",
+    "completed": false
+  }
+]
