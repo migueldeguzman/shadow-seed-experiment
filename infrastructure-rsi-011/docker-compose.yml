@@ -1,0 +1,284 @@
+# =============================================================
+# RSI-011 — Docker Compose (N=4 Paired Runs)
+# Experiment RSI-011: Shadow Seed on [MODEL TBD]
+# Author: Mia 🌸 | Date: 2026-03-05
+# =============================================================
+#
+# Architecture (per pair):
+#   john-a-N  ──▶  Ollama on host (via host.docker.internal)
+#   john-b-N  ──▶  Ollama on host (via host.docker.internal)
+#
+# Based on RSI-010 infrastructure (proven stable over 581 sessions).
+# Change OLLAMA_MODEL to target a different model.
+#
+
+# ========================== NETWORKS ==========================
+networks:
+  # Internal-only network — subjects can reach host (Ollama) but nothing else
+  rsi011-internal:
+    driver: bridge
+
+# ========================== SERVICES ==========================
+services:
+  # ======================== PAIR 1 ========================
+  john-a-1:
+    build: ./subject
+    container_name: lab-rsi011-john-a-1
+    hostname: john
+    networks:
+      rsi011-internal: {}
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    environment:
+      - SUBJECT_ID=john-a-1
+      - PAIR_ID=1
+      - EXPERIMENT_ID=rsi-011
+      - OLLAMA_URL=http://host.docker.internal:11434
+      - OLLAMA_MODEL=qwen3-coder-next
+      - MAX_TURNS=25
+      - MAX_TOKENS=4096
+      - TZ=Asia/Dubai
+    volumes:
+      - john-a-1-workspace:/workspace
+      - ../experiments/rsi-011/subjects/john-a/seed/SOUL.md:/seed/SOUL.md:ro
+      - ../experiments/rsi-011/subjects/john-a/seed/AGENTS.md:/seed/AGENTS.md:ro
+      - ../experiments/rsi-011/subjects/john-a/seed/HEARTBEAT.md:/seed/HEARTBEAT.md:ro
+      - ../experiments/rsi-011/subjects/john-a/seed/MEMORY.md:/seed/MEMORY.md:ro
+      - ../experiments/rsi-011/subjects/john-a/seed/EMOTIONS.md:/seed/EMOTIONS.md:ro
+    cap_drop:
+      - ALL
+    cap_add:
+      - CHOWN
+      - FOWNER
+      - DAC_OVERRIDE
+
+  john-b-1:
+    build: ./subject
+    container_name: lab-rsi011-john-b-1
+    hostname: john
+    networks:
+      rsi011-internal: {}
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    environment:
+      - SUBJECT_ID=john-b-1
+      - PAIR_ID=1
+      - EXPERIMENT_ID=rsi-011
+      - OLLAMA_URL=http://host.docker.internal:11434
+      - OLLAMA_MODEL=qwen3-coder-next
+      - MAX_TURNS=25
+      - MAX_TOKENS=4096
+      - TZ=Asia/Dubai
+    volumes:
+      - john-b-1-workspace:/workspace
+      - ../experiments/rsi-011/subjects/john-b/seed/SOUL.md:/seed/SOUL.md:ro
+      - ../experiments/rsi-011/subjects/john-b/seed/AGENTS.md:/seed/AGENTS.md:ro
+      - ../experiments/rsi-011/subjects/john-b/seed/HEARTBEAT.md:/seed/HEARTBEAT.md:ro
+      - ../experiments/rsi-011/subjects/john-b/seed/MEMORY.md:/seed/MEMORY.md:ro
+      - ../experiments/rsi-011/subjects/john-b/seed/EMOTIONS.md:/seed/EMOTIONS.md:ro
+    cap_drop:
+      - ALL
+    cap_add:
+      - CHOWN
+      - FOWNER
+      - DAC_OVERRIDE
+
+  # ======================== PAIR 2 ========================
+  john-a-2:
+    build: ./subject
+    container_name: lab-rsi011-john-a-2
+    hostname: john
+    networks:
+      rsi011-internal: {}
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    environment:
+      - SUBJECT_ID=john-a-2
+      - PAIR_ID=2
+      - EXPERIMENT_ID=rsi-011
+      - OLLAMA_URL=http://host.docker.internal:11434
+      - OLLAMA_MODEL=qwen3-coder-next
+      - MAX_TURNS=25
+      - MAX_TOKENS=4096
+      - TZ=Asia/Dubai
+    volumes:
+      - john-a-2-workspace:/workspace
+      - ../experiments/rsi-011/subjects/john-a/seed/SOUL.md:/seed/SOUL.md:ro
+      - ../experiments/rsi-011/subjects/john-a/seed/AGENTS.md:/seed/AGENTS.md:ro
+      - ../experiments/rsi-011/subjects/john-a/seed/HEARTBEAT.md:/seed/HEARTBEAT.md:ro
+      - ../experiments/rsi-011/subjects/john-a/seed/MEMORY.md:/seed/MEMORY.md:ro
+      - ../experiments/rsi-011/subjects/john-a/seed/EMOTIONS.md:/seed/EMOTIONS.md:ro
+    cap_drop:
+      - ALL
+    cap_add:
+      - CHOWN
+      - FOWNER
+      - DAC_OVERRIDE
+
+  john-b-2:
+    build: ./subject
+    container_name: lab-rsi011-john-b-2
+    hostname: john
+    networks:
+      rsi011-internal: {}
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    environment:
+      - SUBJECT_ID=john-b-2
+      - PAIR_ID=2
+      - EXPERIMENT_ID=rsi-011
+      - OLLAMA_URL=http://host.docker.internal:11434
+      - OLLAMA_MODEL=qwen3-coder-next
+      - MAX_TURNS=25
+      - MAX_TOKENS=4096
+      - TZ=Asia/Dubai
+    volumes:
+      - john-b-2-workspace:/workspace
+      - ../experiments/rsi-011/subjects/john-b/seed/SOUL.md:/seed/SOUL.md:ro
+      - ../experiments/rsi-011/subjects/john-b/seed/AGENTS.md:/seed/AGENTS.md:ro
+      - ../experiments/rsi-011/subjects/john-b/seed/HEARTBEAT.md:/seed/HEARTBEAT.md:ro
+      - ../experiments/rsi-011/subjects/john-b/seed/MEMORY.md:/seed/MEMORY.md:ro
+      - ../experiments/rsi-011/subjects/john-b/seed/EMOTIONS.md:/seed/EMOTIONS.md:ro
+    cap_drop:
+      - ALL
+    cap_add:
+      - CHOWN
+      - FOWNER
+      - DAC_OVERRIDE
+
+  # ======================== PAIR 3 ========================
+  john-a-3:
+    build: ./subject
+    container_name: lab-rsi011-john-a-3
+    hostname: john
+    networks:
+      rsi011-internal: {}
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    environment:
+      - SUBJECT_ID=john-a-3
+      - PAIR_ID=3
+      - EXPERIMENT_ID=rsi-011
+      - OLLAMA_URL=http://host.docker.internal:11434
+      - OLLAMA_MODEL=qwen3-coder-next
+      - MAX_TURNS=25
+      - MAX_TOKENS=4096
+      - TZ=Asia/Dubai
+    volumes:
+      - john-a-3-workspace:/workspace
+      - ../experiments/rsi-011/subjects/john-a/seed/SOUL.md:/seed/SOUL.md:ro
+      - ../experiments/rsi-011/subjects/john-a/seed/AGENTS.md:/seed/AGENTS.md:ro
+      - ../experiments/rsi-011/subjects/john-a/seed/HEARTBEAT.md:/seed/HEARTBEAT.md:ro
+      - ../experiments/rsi-011/subjects/john-a/seed/MEMORY.md:/seed/MEMORY.md:ro
+      - ../experiments/rsi-011/subjects/john-a/seed/EMOTIONS.md:/seed/EMOTIONS.md:ro
+    cap_drop:
+      - ALL
+    cap_add:
+      - CHOWN
+      - FOWNER
+      - DAC_OVERRIDE
+
+  john-b-3:
+    build: ./subject
+    container_name: lab-rsi011-john-b-3
+    hostname: john
+    networks:
+      rsi011-internal: {}
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    environment:
+      - SUBJECT_ID=john-b-3
+      - PAIR_ID=3
+      - EXPERIMENT_ID=rsi-011
+      - OLLAMA_URL=http://host.docker.internal:11434
+      - OLLAMA_MODEL=qwen3-coder-next
+      - MAX_TURNS=25
+      - MAX_TOKENS=4096
+      - TZ=Asia/Dubai
+    volumes:
+      - john-b-3-workspace:/workspace
+      - ../experiments/rsi-011/subjects/john-b/seed/SOUL.md:/seed/SOUL.md:ro
+      - ../experiments/rsi-011/subjects/john-b/seed/AGENTS.md:/seed/AGENTS.md:ro
+      - ../experiments/rsi-011/subjects/john-b/seed/HEARTBEAT.md:/seed/HEARTBEAT.md:ro
+      - ../experiments/rsi-011/subjects/john-b/seed/MEMORY.md:/seed/MEMORY.md:ro
+      - ../experiments/rsi-011/subjects/john-b/seed/EMOTIONS.md:/seed/EMOTIONS.md:ro
+    cap_drop:
+      - ALL
+    cap_add:
+      - CHOWN
+      - FOWNER
+      - DAC_OVERRIDE
+
+  # ======================== PAIR 4 ========================
+  john-a-4:
+    build: ./subject
+    container_name: lab-rsi011-john-a-4
+    hostname: john
+    networks:
+      rsi011-internal: {}
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    environment:
+      - SUBJECT_ID=john-a-4
+      - PAIR_ID=4
+      - EXPERIMENT_ID=rsi-011
+      - OLLAMA_URL=http://host.docker.internal:11434
+      - OLLAMA_MODEL=qwen3-coder-next
+      - MAX_TURNS=25
+      - MAX_TOKENS=4096
+      - TZ=Asia/Dubai
+    volumes:
+      - john-a-4-workspace:/workspace
+      - ../experiments/rsi-011/subjects/john-a/seed/SOUL.md:/seed/SOUL.md:ro
+      - ../experiments/rsi-011/subjects/john-a/seed/AGENTS.md:/seed/AGENTS.md:ro
+      - ../experiments/rsi-011/subjects/john-a/seed/HEARTBEAT.md:/seed/HEARTBEAT.md:ro
+      - ../experiments/rsi-011/subjects/john-a/seed/MEMORY.md:/seed/MEMORY.md:ro
+      - ../experiments/rsi-011/subjects/john-a/seed/EMOTIONS.md:/seed/EMOTIONS.md:ro
+    cap_drop:
+      - ALL
+    cap_add:
+      - CHOWN
+      - FOWNER
+      - DAC_OVERRIDE
+
+  john-b-4:
+    build: ./subject
+    container_name: lab-rsi011-john-b-4
+    hostname: john
+    networks:
+      rsi011-internal: {}
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    environment:
+      - SUBJECT_ID=john-b-4
+      - PAIR_ID=4
+      - EXPERIMENT_ID=rsi-011
+      - OLLAMA_URL=http://host.docker.internal:11434
+      - OLLAMA_MODEL=qwen3-coder-next
+      - MAX_TURNS=25
+      - MAX_TOKENS=4096
+      - TZ=Asia/Dubai
+    volumes:
+      - john-b-4-workspace:/workspace
+      - ../experiments/rsi-011/subjects/john-b/seed/SOUL.md:/seed/SOUL.md:ro
+      - ../experiments/rsi-011/subjects/john-b/seed/AGENTS.md:/seed/AGENTS.md:ro
+      - ../experiments/rsi-011/subjects/john-b/seed/HEARTBEAT.md:/seed/HEARTBEAT.md:ro
+      - ../experiments/rsi-011/subjects/john-b/seed/MEMORY.md:/seed/MEMORY.md:ro
+      - ../experiments/rsi-011/subjects/john-b/seed/EMOTIONS.md:/seed/EMOTIONS.md:ro
+    cap_drop:
+      - ALL
+    cap_add:
+      - CHOWN
+      - FOWNER
+      - DAC_OVERRIDE
+
+# ========================== VOLUMES ==========================
+volumes:
+  john-a-1-workspace:
+  john-b-1-workspace:
+  john-a-2-workspace:
+  john-b-2-workspace:
+  john-a-3-workspace:
+  john-b-3-workspace:
+  john-a-4-workspace:
+  john-b-4-workspace:
