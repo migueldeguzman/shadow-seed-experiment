@@ -4,7 +4,7 @@
 # Author: Mia 🌸 | Date: 2026-02-15
 # =============================================================
 
-FROM node:22-slim
+FROM node:22.23.4-slim
 
 # Install tools
 RUN apt-get update && \
